@@ -1,145 +1,640 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#063f35">
-  <meta name="description" content="গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা — শিক্ষা, নৈতিকতা ও মানবিকতার সমন্বয়ে">
-  <title>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a3a2f">
+<title>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা | ঝিকরগাছা, যশোর</title>
+<meta name="description" content="গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা, ঝিকরগাছা, যশোর। EIIN ১১৫৭৭০। প্লে গ্রুপ থেকে ফাযিল (বি.এ) পর্যন্ত ইসলামী মূল্যবোধ ও আধুনিক শিক্ষার সমন্বয়ে একটি শিক্ষাপ্রতিষ্ঠান।">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="bn_BD">
+<meta property="og:title" content="গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা">
+<meta property="og:description" content="ইসলামী মূল্যবোধ, আধুনিক শিক্ষা ও চরিত্র গঠনের প্রতিষ্ঠান — ঝিকরগাছা, যশোর।">
+<meta property="og:url" content="https://monirul88867.github.io/GDFM0.1_demo_fun/">
+<meta property="og:image" content="https://monirul88867.github.io/GDFM0.1_demo_fun/media/gdfm_campus2.png">
+
+<!-- If JavaScript is available, enable the entrance/reveal effects. Without JS everything stays visible. -->
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span><span class="top-dot"></span> জ্ঞান • নৈতিকতা • মানবিকতা</span>
-      <div class="top-links"><a href="tel:+8801309115770">☎ +880 1309-115770</a><a href="mailto:gazirdargahffmadrasha@gmail.com">✉ ইমেইল করুন</a></div>
+<a class="skip-link" href="#main">মূল বিষয়বস্তুতে যান</a>
+
+<!-- ========== A. TOP INFORMATION BAR ========== -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <ul class="topbar-info">
+      <li>EIIN: ১১৫৭৭০</li>
+      <li><a href="tel:+8801309115770">+880 1309-115770</a></li>
+      <li class="hide-sm"><a href="tel:+8801718092785">+880 1718-092785</a></li>
+      <li class="hide-md"><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></li>
+    </ul>
+    <ul class="topbar-links">
+      <li class="hide-sm"><a href="#notices">নোটিশ</a></li>
+      <li class="hide-sm"><a href="#downloads">ডাউনলোড</a></li>
+      <li class="hide-sm"><a href="#results">ফলাফল</a></li>
+      <li><a class="topbar-cta" href="#admission">ভর্তি তথ্য</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ========== B. HEADER & NAVIGATION ========== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসা — হোম">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path d="M24 4 5 15v3h38v-3L24 4Zm-14 17h4v13h-4zm12 0h4v13h-4zm12 0h4v13h-4zM5 37h38v4H5zM18 13l6-4 6 4H18Z"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>গাজীর দরগাহ ফয়জাবাদ</strong>
+        <span>ফাযিল (বি.এ) মাদ্রাসা</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="মেনু খুলুন">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="প্রধান নেভিগেশন">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#top">হোম</a></li>
+
+        <li class="has-sub">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-about">আমাদের সম্পর্কে</button>
+          <ul class="sub" id="sub-about">
+            <li><a href="#about">প্রতিষ্ঠান পরিচিতি</a></li>
+            <li><a href="#values">লক্ষ্য ও মূল্যবোধ</a></li>
+            <li><a href="#principal">অধ্যক্ষের বাণী</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-academic">একাডেমিক</button>
+          <ul class="sub" id="sub-academic">
+            <li><a href="#academics">শিক্ষাস্তর</a></li>
+            <li><a href="#results">ফলাফল</a></li>
+            <li><a href="#calendar">একাডেমিক ক্যালেন্ডার</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-admin">প্রশাসন</button>
+          <ul class="sub" id="sub-admin">
+            <li><a href="#leadership">পরিচালনা পর্ষদ</a></li>
+            <li><a href="#staff">শিক্ষক ও কর্মচারী</a></li>
+          </ul>
+        </li>
+
+        <li><a class="nav-link" href="#admission">ভর্তি</a></li>
+        <li><a class="nav-link" href="#notices">নোটিশ</a></li>
+        <li><a class="nav-link" href="#events">ইভেন্ট</a></li>
+
+        <li class="has-sub">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-campus">ক্যাম্পাস</button>
+          <ul class="sub" id="sub-campus">
+            <li><a href="#campus">সুযোগ-সুবিধা</a></li>
+            <li><a href="#gallery">ছবি ও ভিডিও</a></li>
+          </ul>
+        </li>
+
+        <li><a class="nav-link" href="#downloads">ডাউনলোড</a></li>
+        <li><a class="nav-link" href="#services">শিক্ষার্থী সেবা</a></li>
+        <li><a class="nav-link" href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main id="main">
+
+<!-- ========== C. HERO ========== -->
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <div class="hero-bg" data-parallax="0.18">
+    <img src="media/gdfm_campus2.png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus(1).png" alt="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসার ক্যাম্পাস" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker hero-step">ঝিকরগাছা, যশোর · EIIN ১১৫৭৭০</p>
+      <h1 id="heroTitle" class="hero-step">গাজীর দরগাহ ফয়জাবাদ <span>ফাযিল (বি.এ) মাদ্রাসা</span></h1>
+      <p class="hero-arabic hero-step" lang="ar" dir="rtl">مدرسة غازي درگاه فيض آباد الفاضلة (بكالوريوس)</p>
+      <p class="hero-lead hero-step">আধুনিক জ্ঞান, ইসলামী মূল্যবোধ ও মানবিক শিক্ষার সমন্বয়ে আগামী প্রজন্মকে গড়ে তোলার প্রত্যয়।</p>
+      <div class="hero-actions hero-step">
+        <a class="btn btn-gold" href="#admission">ভর্তি তথ্য <small>Admission Information</small></a>
+        <a class="btn btn-ghost" href="#about">প্রতিষ্ঠান সম্পর্কে <small>Explore Our Institution</small></a>
+      </div>
+    </div>
+
+    <figure class="hero-arch hero-step">
+      <div class="arch-frame">
+        <img src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" decoding="async">
+      </div>
+      <figcaption>আমাদের ক্যাম্পাস</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Quick facts (only verified information) -->
+<section class="quick-strip" aria-label="প্রতিষ্ঠানের সংক্ষিপ্ত তথ্য">
+  <ul class="container quick-grid">
+    <li><strong>EIIN ১১৫৭৭০</strong><span>শিক্ষা মন্ত্রণালয়ের প্রতিষ্ঠান সনাক্তকরণ নম্বর</span></li>
+    <li><strong>৫টি শিক্ষাস্তর</strong><span>প্লে গ্রুপ থেকে ফাযিল (বি.এ)</span></li>
+    <li><strong>ঝিকরগাছা, যশোর</strong><span>যশোর–বেনাপোল মহাসড়ক</span></li>
+    <li><a href="tel:+8801309115770"><strong>সরাসরি যোগাযোগ</strong><span>+880 1309-115770</span></a></li>
+  </ul>
+</section>
+
+<!-- ========== G. NOTICE BOARD ========== -->
+<section class="section notices-section" id="notices" aria-labelledby="noticesTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="noticesTitle">নোটিশ বোর্ড</h2>
+      <p>ভর্তি, পরীক্ষা, ফলাফল ও অন্যান্য ঘোষণা। কেবল প্রতিষ্ঠানের অনুমোদিত নোটিশ এখানে প্রকাশ করা হবে।</p>
+    </div>
+
+    <div class="notice-tools" data-reveal>
+      <div class="field-inline">
+        <label for="noticeSearch" class="sr-only">নোটিশ খুঁজুন</label>
+        <input type="search" id="noticeSearch" placeholder="নোটিশ খুঁজুন…" autocomplete="off">
+      </div>
+      <div class="chip-row" id="noticeCategories" role="group" aria-label="নোটিশের বিভাগ"></div>
+    </div>
+
+    <p class="result-count" id="noticeCount" role="status" aria-live="polite"></p>
+    <div class="notice-list" id="noticeList"></div>
+    <div class="more-row"><button class="btn btn-outline" id="noticeMore" type="button" hidden>আরও নোটিশ দেখুন</button></div>
+  </div>
+</section>
+
+<!-- ========== D. INSTITUTIONAL INTRODUCTION ========== -->
+<section class="section about-section" id="about" aria-labelledby="aboutTitle">
+  <div class="container about-grid">
+    <div class="about-visual" data-reveal>
+      <div class="arch-frame arch-lg">
+        <img src="media/gdfm_campus(1).png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus2.png" alt="ক্যাম্পাস ভবন" loading="lazy" decoding="async">
+      </div>
+      <p class="about-badge">জ্ঞান · নৈতিকতা · মানবিকতা</p>
+    </div>
+
+    <div class="about-copy">
+      <div class="sec-head left" data-reveal>
+        <h2 id="aboutTitle">শিক্ষা শুধু পাঠ্যবই নয়, মানুষ হয়ে ওঠার যাত্রা</h2>
+      </div>
+      <p class="lead" data-reveal>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা শিক্ষা, নৈতিকতা ও মানবিক গুণাবলির বিকাশে নিবেদিত একটি শিক্ষাপ্রতিষ্ঠান।</p>
+      <p data-reveal>আমাদের লক্ষ্য শিক্ষার্থীদের জ্ঞান অর্জনে উৎসাহিত করা, দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা এবং ভবিষ্যতের জন্য আত্মবিশ্বাসী করে প্রস্তুত করা।</p>
+      <p class="todo-note" data-reveal>প্রতিষ্ঠার সাল, ইতিহাস ও অনুমোদিত মিশন–ভিশন বক্তব্য যাচাই করে এখানে যোগ করা হবে।</p>
     </div>
   </div>
 
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="হোম পেজ">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4 5 15v3h38v-3L24 4Zm-14 17h4v13h-4zm12 0h4v13h-4zm12 0h4v13h-4zM5 37h38v4H5zM18 13l6-4 6 4H18Z"/></svg></span>
-        <span class="brand-text"><strong>গাজীর দরগাহ ফয়জাবাদ</strong><small>ফাযিল (বি.এ) মাদ্রাসা</small><em>GAZIR DARGAH FOIZABAD FAZIL (B.A.) MADRASHA</em></span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
-      <nav class="main-nav" id="mainNav" aria-label="প্রধান নেভিগেশন">
-        <a class="nav-link active" href="#top">হোম</a>
-        <a class="nav-link" href="#about">আমাদের সম্পর্কে</a>
-        <a class="nav-link" href="#academics">একাডেমিক</a>
-        <a class="nav-link" href="#notices">নোটিশ</a>
-        <a class="nav-link" href="#campus">ক্যাম্পাস</a>
-        <div class="nav-dropdown">
-          <button class="nav-link dropdown-trigger" id="portalTrigger" aria-expanded="false">পোর্টাল <span class="chevron">⌄</span></button>
-          <div class="dropdown-menu" id="portalMenu">
-            <button data-role="Student">শিক্ষার্থী পোর্টাল</button><button data-role="Guardian">অভিভাবক পোর্টাল</button><button data-role="Teacher / Staff">শিক্ষক ও কর্মচারী</button><button data-role="Librarian">লাইব্রেরিয়ান</button><button data-role="Sub-Admin">সাব-অ্যাডমিন</button><button data-role="Super Admin">সুপার অ্যাডমিন</button>
-          </div>
-        </div>
-        <a class="nav-link" href="#contact">যোগাযোগ</a>
-        <a class="nav-cta" href="#admission">ভর্তি তথ্য <span>↗</span></a>
-      </nav>
+  <div class="container values" id="values" aria-labelledby="valuesTitle">
+    <h3 id="valuesTitle" class="values-title" data-reveal>লক্ষ্য ও মূল্যবোধ</h3>
+    <ul class="values-grid" data-reveal-group>
+      <li data-reveal>
+        <h4>সমন্বিত শিক্ষা</h4>
+        <p>ইসলামী শিক্ষা ও সাধারণ শিক্ষার ভারসাম্যপূর্ণ চর্চা।</p>
+      </li>
+      <li data-reveal>
+        <h4>মূল্যবোধের চর্চা</h4>
+        <p>শৃঙ্খলা, সততা ও পারস্পরিক সম্মানবোধের বিকাশ।</p>
+      </li>
+      <li data-reveal>
+        <h4>দায়িত্বশীল নাগরিক</h4>
+        <p>জ্ঞান অর্জনের পাশাপাশি সমাজের প্রতি দায়িত্ববোধ তৈরি।</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== E. ACADEMIC PROGRAMS ========== -->
+<section class="section academics-section" id="academics" aria-labelledby="academicsTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="academicsTitle">শিক্ষাস্তর</h2>
+      <p>শিশুর প্রথম পাঠ থেকে উচ্চশিক্ষা পর্যন্ত — পাঁচটি ধাপে শেখার পথ।</p>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-image" role="img" aria-label="সবুজ পরিবেশে শিক্ষাপ্রতিষ্ঠানের ক্যাম্পাস"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="eyebrow light"><span></span> প্রতিষ্ঠিত শিক্ষার ঐতিহ্য • EIIN 115770</div>
-        <h1>مدرسة غازي درگاه فيض آباد<br><span>الفاضلة (بكالوريوس)</span></h1>
-        <p class="hero-lead">আধুনিক জ্ঞান, ইসলামী মূল্যবোধ ও মানবিক শিক্ষার সমন্বয়ে আগামী প্রজন্মকে গড়ে তোলার প্রত্যয়।</p>
-        <div class="hero-actions"><a class="btn btn-gold" href="#admission">ভর্তির তথ্য জানুন <span>↗</span></a><a class="btn btn-glass" href="#about"><span class="play-icon">▶</span> আমাদের সম্পর্কে</a></div>
-        <div class="hero-note"><span class="note-icon">✦</span><span><strong>শিক্ষার প্রতিটি ধাপে পাশে</strong><small>Play Group থেকে Fazil (B.A.) পর্যন্ত</small></span></div>
-      </div>
-      <div class="hero-index"><span>01</span><i></i><span>03</span></div>
-      <div class="hero-bottom"><span>JHIKARGACHHA · JASHORE · BANGLADESH</span><span>শিক্ষা • শৃঙ্খলা • সাফল্য</span></div>
-    </section>
-
-    <section class="quick-strip">
-      <div class="container quick-grid">
-        <div class="quick-item"><span class="quick-icon">▤</span><div><strong>EIIN 115770</strong><small>প্রতিষ্ঠান পরিচিতি</small></div></div>
-        <div class="quick-item"><span class="quick-icon">◷</span><div><strong>৫টি শিক্ষাস্তর</strong><small>শিশু থেকে উচ্চশিক্ষা</small></div></div>
-        <div class="quick-item"><span class="quick-icon">⌂</span><div><strong>ঝিকরগাছা, যশোর</strong><small>যশোর–বেনাপোল মহাসড়ক</small></div></div>
-        <a class="quick-item quick-link" href="#contact"><span class="quick-icon">↗</span><div><strong>যোগাযোগ করুন</strong><small>আমরা পাশে আছি</small></div></a>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <div class="about-visual">
-          <img class="about-photo" src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" loading="lazy">
-          <div class="experience-card"><span class="exp-symbol">✦</span><strong>জ্ঞান ও মূল্যবোধ</strong><small>একসঙ্গে, প্রতিটি পদক্ষেপে</small></div>
-          <div class="photo-caption">OUR CAMPUS' <span>—</span> Mosque</div>
+    <ol class="levels" data-reveal-group>
+      <li class="level" data-reveal>
+        <div class="level-body">
+          <h3>প্লে গ্রুপ <span lang="en">Play Group</span></h3>
+          <p>শিশুদের আনন্দময় শেখার প্রাথমিক ভিত্তি।</p>
         </div>
-        <div class="about-copy">
-          <div class="eyebrow"><span></span> আমাদের পরিচয়</div>
-          <h2 class="section-title">শিক্ষা শুধু পাঠ্যবই নয়,<br><span>মানুষ হয়ে ওঠার যাত্রা।</span></h2>
-          <p class="section-lead">গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা—শিক্ষা, নৈতিকতা ও মানবিক গুণাবলির বিকাশে নিবেদিত একটি শিক্ষাপ্রতিষ্ঠান।</p>
-          <p class="muted">আমাদের লক্ষ্য শিক্ষার্থীদের জ্ঞান অর্জনে উৎসাহিত করা, দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা এবং ভবিষ্যতের জন্য আত্মবিশ্বাসী করে প্রস্তুত করা।</p>
-          <div class="about-points"><div><span>✓</span><p><strong>সমন্বিত শিক্ষা</strong><small>সাধারণ ও ধর্মীয় শিক্ষার ভারসাম্য</small></p></div><div><span>✓</span><p><strong>মূল্যবোধের চর্চা</strong><small>শৃঙ্খলা, সততা ও পারস্পরিক সম্মান</small></p></div></div>
-          <a class="text-link" href="#academics">আমাদের শিক্ষাক্রম দেখুন <span>→</span></a>
+        <a class="level-link" href="#admission" data-level="প্লে গ্রুপ">ভর্তির তথ্য</a>
+      </li>
+      <li class="level" data-reveal>
+        <div class="level-body">
+          <h3>প্রাথমিক <span lang="en">Primary</span></h3>
+          <p>ভাষা, সংখ্যা ও সামাজিক দক্ষতার ভিত্তি গঠন।</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section academics-section" id="academics">
-      <div class="container">
-        <div class="section-heading"><div><div class="eyebrow"><span></span> একাডেমিক কার্যক্রম</div><h2 class="section-title">শেখার প্রতিটি ধাপে<br><span>সম্ভাবনার নতুন দুয়ার।</span></h2></div><p class="heading-aside">শিক্ষার্থীর বয়স, আগ্রহ ও শিক্ষাস্তর অনুযায়ী শেখার ভিত্তি গড়ে তোলার পথচলা।</p></div>
-        <div class="program-grid">
-          <article class="program-card"><div class="program-number">01 / FOUNDATION</div><div class="program-icon">✿</div><h3>প্লে গ্রুপ ও প্রাথমিক</h3><p>আনন্দময় শেখা, ভাষা, সংখ্যা, সৃজনশীলতা ও সামাজিক দক্ষতার ভিত্তি।</p><a href="#admission" class="card-link">বিস্তারিত জানুন <span>↗</span></a></article>
-          <article class="program-card featured"><div class="program-number">02 / SECONDARY</div><div class="program-icon">⌘</div><h3>দাখিল (Dakhil)</h3><p>মাধ্যমিক পর্যায়ে বিষয়ভিত্তিক জ্ঞান, অধ্যবসায় ও পরীক্ষার প্রস্তুতি।</p><a href="#admission" class="card-link">বিস্তারিত জানুন <span>↗</span></a></article>
-          <article class="program-card"><div class="program-number">03 / HIGHER SECONDARY</div><div class="program-icon">✧</div><h3>আলিম (Alim)</h3><p>উচ্চমাধ্যমিক পর্যায়ে গভীর অধ্যয়ন ও উচ্চশিক্ষার প্রস্তুতি।</p><a href="#admission" class="card-link">বিস্তারিত জানুন <span>↗</span></a></article>
-          <article class="program-card"><div class="program-number">04 / UNDERGRADUATE</div><div class="program-icon">⌑</div><h3>ফাযিল (বি.এ.)</h3><p>উচ্চশিক্ষা, বিশ্লেষণী চিন্তা এবং ভবিষ্যৎ গড়ার একাডেমিক যাত্রা।</p><a href="#admission" class="card-link">বিস্তারিত জানুন <span>↗</span></a></article>
+        <a class="level-link" href="#admission" data-level="প্রাথমিক">ভর্তির তথ্য</a>
+      </li>
+      <li class="level" data-reveal>
+        <div class="level-body">
+          <h3>দাখিল <span lang="en">Dakhil</span></h3>
+          <p>মাধ্যমিক পর্যায়ে বিষয়ভিত্তিক জ্ঞান, অধ্যবসায় ও পরীক্ষার প্রস্তুতি।</p>
         </div>
-        <p class="small-disclaimer">* ভর্তি যোগ্যতা, আসনসংখ্যা, বিষয় ও সময়সূচির জন্য প্রতিষ্ঠানের অফিসে যোগাযোগ করে হালনাগাদ তথ্য নিশ্চিত করুন।</p>
+        <a class="level-link" href="#admission" data-level="দাখিল">ভর্তির তথ্য</a>
+      </li>
+      <li class="level" data-reveal>
+        <div class="level-body">
+          <h3>আলিম <span lang="en">Alim</span></h3>
+          <p>উচ্চমাধ্যমিক পর্যায়ে গভীর অধ্যয়ন ও উচ্চশিক্ষার প্রস্তুতি।</p>
+        </div>
+        <a class="level-link" href="#admission" data-level="আলিম">ভর্তির তথ্য</a>
+      </li>
+      <li class="level" data-reveal>
+        <div class="level-body">
+          <h3>ফাযিল (বি.এ) <span lang="en">Fazil (B.A.)</span></h3>
+          <p>উচ্চশিক্ষা, বিশ্লেষণী চিন্তা ও ভবিষ্যৎ গড়ার একাডেমিক যাত্রা।</p>
+        </div>
+        <a class="level-link" href="#admission" data-level="ফাযিল (বি.এ)">ভর্তির তথ্য</a>
+      </li>
+    </ol>
+    <p class="fine-print">ভর্তির যোগ্যতা, আসনসংখ্যা, বিষয় ও ফি সম্পর্কে হালনাগাদ তথ্যের জন্য অফিসে যোগাযোগ করুন।</p>
+  </div>
+</section>
+
+<!-- Principal's message -->
+<section class="principal" id="principal" aria-labelledby="principalTitle">
+  <div class="principal-bg" data-parallax="0.12" aria-hidden="true">
+    <img src="media/classroom.png" alt="" loading="lazy" decoding="async">
+  </div>
+  <div class="principal-shade" aria-hidden="true"></div>
+  <div class="container principal-inner" data-reveal>
+    <h2 id="principalTitle" class="sr-only">অধ্যক্ষের বাণী</h2>
+    <blockquote>
+      <p>শিক্ষার প্রকৃত সার্থকতা জ্ঞান অর্জনের পাশাপাশি নৈতিকতা, দায়িত্ববোধ ও মানবিকতায় সমৃদ্ধ মানুষ হয়ে ওঠার মধ্যে নিহিত।</p>
+      <p>শিক্ষার্থী, অভিভাবক ও শিক্ষকমণ্ডলীর সম্মিলিত প্রচেষ্টায় আমরা একটি সুন্দর শিক্ষার পরিবেশ গড়ে তুলতে চাই।</p>
+    </blockquote>
+    <p class="principal-sign"><strong>অধ্যক্ষ</strong> গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</p>
+    <p class="todo-note light">অধ্যক্ষের নাম, ছবি ও অনুমোদিত বাণী যাচাই করে এখানে বসানো হবে।</p>
+  </div>
+</section>
+
+<!-- ========== I. CAMPUS & FACILITIES ========== -->
+<section class="section campus-section" id="campus" aria-labelledby="campusTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="campusTitle">ক্যাম্পাস ও সুযোগ-সুবিধা</h2>
+      <p>শেখার জন্য শান্ত, সুশৃঙ্খল ও অনুপ্রেরণাময় পরিবেশ।</p>
+    </div>
+
+    <div class="facility-grid" data-reveal-group>
+      <figure class="facility facility-wide" data-reveal>
+        <img src="media/gdfm_campus(1).png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus2.png" alt="ক্যাম্পাস ভবন" loading="lazy" decoding="async">
+        <figcaption><strong>একাডেমিক ভবন ও প্রাঙ্গণ</strong><span>শিক্ষার্থীদের প্রতিদিনের পাঠ ও চলাচলের কেন্দ্র</span></figcaption>
+      </figure>
+      <figure class="facility" data-reveal>
+        <img src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" loading="lazy" decoding="async">
+        <figcaption><strong>মসজিদ</strong><span>নামাজ ও ইবাদতের স্থান</span></figcaption>
+      </figure>
+      <figure class="facility" data-reveal>
+        <img src="media/classroom.png" alt="শ্রেণিকক্ষে শিক্ষার্থীদের শেখার পরিবেশ" loading="lazy" decoding="async">
+        <figcaption><strong>শ্রেণিকক্ষ</strong><span>জ্ঞানের চর্চা আর শ্রদ্ধার মেলবন্ধন</span></figcaption>
+      </figure>
+    </div>
+    <p class="todo-note">গ্রন্থাগার, পরীক্ষাগার, খেলার মাঠসহ অন্যান্য সুযোগ-সুবিধা নিশ্চিত হলে প্রকৃত ছবিসহ এখানে যোগ করা হবে।</p>
+  </div>
+</section>
+
+<!-- ========== J. EVENTS ========== -->
+<section class="section events-section" id="events" aria-labelledby="eventsTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="eventsTitle">ইভেন্ট ও প্রতিষ্ঠানের কার্যক্রম</h2>
+      <p>শিক্ষা সফর, বিজ্ঞান মেলা ও বিভিন্ন অনুষ্ঠানের মুহূর্ত।</p>
+    </div>
+    <div class="event-grid" id="eventGrid" data-reveal-group></div>
+  </div>
+</section>
+
+<!-- ========== K. GALLERY ========== -->
+<section class="section gallery-section" id="gallery" aria-labelledby="galleryTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="galleryTitle">ছবি ও ভিডিও গ্যালারি</h2>
+      <p>প্রতিষ্ঠানের প্রকৃত ছবি ও ভিডিও। ছবিতে ক্লিক করে বড় করে দেখুন।</p>
+    </div>
+    <div class="chip-row" id="galleryFilters" role="group" aria-label="গ্যালারির বিভাগ" data-reveal></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ========== L. ADMISSION ========== -->
+<section class="admission" id="admission" aria-labelledby="admissionTitle">
+  <div class="container admission-grid">
+    <div class="admission-copy" data-reveal>
+      <h2 id="admissionTitle">ভর্তির তথ্য</h2>
+      <p class="lead">ভর্তি সম্পর্কে জানতে সরাসরি অফিসে যোগাযোগ করুন অথবা পাশের ফর্মে তথ্য লিখে ইমেইল পাঠান।</p>
+
+      <ol class="steps">
+        <li><strong>যোগাযোগ করুন</strong><span>ফোনে বা ইমেইলে কাঙ্ক্ষিত শিক্ষাস্তরের তথ্য জানুন।</span></li>
+        <li><strong>প্রয়োজনীয় কাগজপত্র জানুন</strong><span>কাগজপত্রের তালিকা অফিস থেকে নিশ্চিত করুন।</span></li>
+        <li><strong>অফিসে আবেদন করুন</strong><span>আবেদন সরাসরি মাদ্রাসা অফিসে জমা দিতে হবে।</span></li>
+      </ol>
+
+      <p class="todo-note light">ভর্তির সময়সূচি, যোগ্যতা, কাগজপত্র ও ভর্তি ফর্ম যাচাই করে যোগ হবে। ফর্ম পেলে <a href="#downloads">ডাউনলোড</a> অংশে পাওয়া যাবে।</p>
+
+      <p class="admission-call">ভর্তি সংক্রান্ত ফোন: <a href="tel:+8801309115770">+880 1309-115770</a> · <a href="tel:+8801718092785">+880 1718-092785</a></p>
+    </div>
+
+    <form class="enquiry" id="enquiryForm" novalidate data-reveal>
+      <h3>ভর্তি সংক্রান্ত জিজ্ঞাসা</h3>
+      <p class="form-intro">ফর্ম পূরণ করে “ইমেইল তৈরি করুন” চাপলে আপনার ইমেইল অ্যাপে প্রস্তুত বার্তা খুলবে। বার্তাটি আপনি পাঠালে তবেই অফিস তা পাবে। এই ওয়েবসাইট কোনো তথ্য সংরক্ষণ করে না।</p>
+
+      <div class="field">
+        <label for="fStudent">শিক্ষার্থীর নাম <abbr title="আবশ্যক">*</abbr></label>
+        <input id="fStudent" name="student" type="text" autocomplete="off" required aria-describedby="eStudent">
+        <p class="error" id="eStudent" role="alert"></p>
       </div>
-    </section>
+      <div class="field">
+        <label for="fGuardian">অভিভাবকের নাম <abbr title="আবশ্যক">*</abbr></label>
+        <input id="fGuardian" name="guardian" type="text" autocomplete="name" required aria-describedby="eGuardian">
+        <p class="error" id="eGuardian" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="fPhone">মোবাইল নম্বর <abbr title="আবশ্যক">*</abbr></label>
+        <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX" required aria-describedby="ePhone">
+        <p class="error" id="ePhone" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="fLevel">শিক্ষাস্তর <abbr title="আবশ্যক">*</abbr></label>
+        <select id="fLevel" name="level" required aria-describedby="eLevel">
+          <option value="">নির্বাচন করুন</option>
+          <option>প্লে গ্রুপ</option>
+          <option>প্রাথমিক</option>
+          <option>দাখিল</option>
+          <option>আলিম</option>
+          <option>ফাযিল (বি.এ)</option>
+        </select>
+        <p class="error" id="eLevel" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="fMessage">আপনার প্রশ্ন (ঐচ্ছিক)</label>
+        <textarea id="fMessage" name="message" rows="3"></textarea>
+      </div>
+      <div class="field check">
+        <input id="fConsent" name="consent" type="checkbox" required aria-describedby="eConsent">
+        <label for="fConsent">আমি বুঝেছি, এটি কোনো অনলাইন আবেদন নয়; বার্তাটি আমার ইমেইল অ্যাপ থেকে পাঠাতে হবে।</label>
+        <p class="error" id="eConsent" role="alert"></p>
+      </div>
 
-    <section class="principal-section">
-      <div class="principal-image"></div><div class="principal-shade"></div>
-      <div class="container principal-content"><div class="eyebrow light"><span></span> অধ্যক্ষের বাণী</div><div class="quote-mark">“</div><blockquote>শিক্ষার প্রকৃত সার্থকতা জ্ঞান অর্জনের পাশাপাশি নৈতিকতা, দায়িত্ববোধ ও মানবিকতায় সমৃদ্ধ মানুষ হয়ে ওঠার মধ্যে নিহিত।</blockquote><p>শিক্ষার্থী, অভিভাবক ও শিক্ষকমণ্ডলীর সম্মিলিত প্রচেষ্টায় আমরা একটি সুন্দর শিক্ষার পরিবেশ গড়ে তুলতে চাই।</p><div class="principal-sign"><span class="sign-line"></span><span><strong>অধ্যক্ষ</strong><small>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</small></span></div><span class="quote-watermark">EDUCATION WITH VALUES</span></div>
-    </section>
+      <button class="btn btn-gold btn-block" type="submit">ইমেইল তৈরি করুন</button>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
 
-    <section class="section team-section" id="team"><div class="container"><div class="section-heading"><div><div class="eyebrow"><span></span> আমাদের নেতৃত্ব</div><h2 class="section-title">শিক্ষা-যাত্রার <span>সহযাত্রী।</span></h2></div><p class="heading-aside">দক্ষ ও নিবেদিত শিক্ষক-প্রশাসনই একটি অনুপ্রেরণামূলক শিক্ষার পরিবেশের ভিত্তি।</p></div>
-      <div class="team-grid"><article class="team-card"><div class="team-avatar avatar-one">অ</div><h3>অধ্যক্ষ</h3><p>প্রতিষ্ঠান প্রধান</p><span>একাডেমিক নেতৃত্ব</span></article><article class="team-card"><div class="team-avatar avatar-two">শি</div><h3>শিক্ষকমণ্ডলী</h3><p>বিষয়ভিত্তিক শিক্ষক</p><span>শেখা ও বিকাশ</span></article><article class="team-card"><div class="team-avatar avatar-three">প্র</div><h3>প্রশাসন বিভাগ</h3><p>অফিস ও সহায়তা দল</p><span>প্রাতিষ্ঠানিক সেবা</span></article><article class="team-card"><div class="team-avatar avatar-four">গ্র</div><h3>গ্রন্থাগার বিভাগ</h3><p>পাঠ ও তথ্য সহায়তা</p><span>জ্ঞানচর্চার সহায়ক</span></article></div>
-      <p class="small-disclaimer">এই অংশে পদবিভিত্তিক পরিচিতি দেখানো হয়েছে। উপস্থাপনার আগে প্রকৃত নাম, ছবি ও দায়িত্বপ্রাপ্ত ব্যক্তির তথ্য যোগ করুন।</p>
-    </div></section>
+<!-- ========== H. RESULTS & ACADEMIC INFORMATION ========== -->
+<section class="section results-section" id="results" aria-labelledby="resultsTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="resultsTitle">ফলাফল ও একাডেমিক তথ্য</h2>
+    </div>
 
-    <section class="section notices-section" id="notices"><div class="container notice-layout"><div class="notice-intro"><div class="eyebrow"><span></span> নোটিশ ও ঘোষণা</div><h2 class="section-title">গুরুত্বপূর্ণ তথ্য<br><span>এক জায়গায়।</span></h2><p class="muted">প্রতিষ্ঠানের ঘোষণা, একাডেমিক আপডেট ও কার্যক্রমের তথ্য দেখুন।</p><a class="text-link" href="#contact">অফিসে যোগাযোগ করুন <span>→</span></a><div class="notice-deco">NOTICE<br>BOARD <span>✳</span></div></div>
-      <div class="notice-panel"><div class="notice-toolbar"><strong>সাম্প্রতিক নোটিশ</strong><label class="filter-wrap"><span class="sr-only">নোটিশের বিভাগ বাছাই</span><select id="noticeFilter"><option value="all">সব নোটিশ</option><option value="admission">ভর্তি</option><option value="academic">একাডেমিক</option><option value="event">অনুষ্ঠান</option></select></label></div>
-        <div id="noticeList" class="notice-list">
-          <article class="notice-row" data-category="admission"><div class="notice-date"><strong>০১</strong><span>নমুনা</span></div><div class="notice-body"><span class="notice-tag tag-admission">ভর্তি</span><h3>নতুন শিক্ষাবর্ষে ভর্তি সংক্রান্ত তথ্য</h3><p>ভর্তির সময়সূচি ও যোগ্যতা অফিস থেকে নিশ্চিত করুন।</p></div><button class="notice-open" data-notice="নতুন শিক্ষাবর্ষে ভর্তি সংক্রান্ত তথ্য" data-detail="এটি একটি ডেমো নোটিশ। প্রকৃত ভর্তি বিজ্ঞপ্তি, তারিখ ও যোগ্যতার তথ্য কর্তৃপক্ষের অনুমোদনের পর এখানে প্রকাশ করুন।" aria-label="ভর্তি নোটিশ পড়ুন">↗</button></article>
-          <article class="notice-row" data-category="academic"><div class="notice-date"><strong>০২</strong><span>নমুনা</span></div><div class="notice-body"><span class="notice-tag tag-academic">একাডেমিক</span><h3>ক্লাস ও একাডেমিক কার্যক্রম</h3><p>ক্লাসের সময়সূচি ও একাডেমিক তথ্য অফিসে পাওয়া যাবে।</p></div><button class="notice-open" data-notice="ক্লাস ও একাডেমিক কার্যক্রম" data-detail="এটি নমুনা তথ্য। সঠিক ক্লাস রুটিন ও একাডেমিক ক্যালেন্ডার প্রকাশের আগে যাচাই করুন।" aria-label="একাডেমিক নোটিশ পড়ুন">↗</button></article>
-          <article class="notice-row" data-category="event"><div class="notice-date"><strong>০৩</strong><span>নমুনা</span></div><div class="notice-body"><span class="notice-tag tag-event">অনুষ্ঠান</span><h3>প্রতিষ্ঠানের অনুষ্ঠান ও সহশিক্ষা কার্যক্রম</h3><p>পরবর্তী আয়োজনের বিস্তারিত ঘোষণা এখানে যুক্ত হবে।</p></div><button class="notice-open" data-notice="প্রতিষ্ঠানের অনুষ্ঠান ও সহশিক্ষা কার্যক্রম" data-detail="এটি একটি ডেমো ঘোষণা। অনুমোদিত অনুষ্ঠান, তারিখ, স্থান ও অংশগ্রহণের নির্দেশনা যুক্ত করুন।" aria-label="অনুষ্ঠানের নোটিশ পড়ুন">↗</button></article>
-        </div><div class="demo-label">DEMO CONTENT · প্রকাশের আগে প্রকৃত নোটিশ দিয়ে প্রতিস্থাপন করুন</div>
-      </div></div></section>
+    <div class="info-grid">
+      <article class="info-card" data-reveal>
+        <h3>পরীক্ষার ফলাফল</h3>
+        <p>এই ওয়েবসাইটে ফলাফল অনুসন্ধানের কোনো ব্যবস্থা নেই। সরকারি পাবলিক পরীক্ষার ফলাফল সংশ্লিষ্ট বোর্ড বা বিশ্ববিদ্যালয়ের অফিসিয়াল সূত্র থেকেই দেখতে হবে।</p>
+        <ul class="link-list">
+          <li><a href="http://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer">শিক্ষা বোর্ডের ফলাফল পোর্টাল <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+          <li><a href="https://www.bmeb.gov.bd/" target="_blank" rel="noopener noreferrer">বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+        </ul>
+        <p class="fine-print">প্রতিষ্ঠানের নিজস্ব পরীক্ষার ফলাফল ও পরীক্ষার নোটিশ প্রকাশিত হলে <a href="#notices">নোটিশ বোর্ডে</a> দেখা যাবে।</p>
+      </article>
 
-    <section class="section facilities-section" id="campus"><div class="container"><div class="section-heading"><div><div class="eyebrow"><span></span> বছর-জুড়ে ক্যাম্পাস</div><h2 class="section-title">শেখার জন্য <span>অনুপ্রেরণাময় পরিবেশ।</span></h2></div><p class="heading-aside">শিক্ষার্থীর একাডেমিক ও ব্যক্তিগত বিকাশে সহায়ক পরিবেশ গড়ে তোলার প্রত্যয়।</p></div>
-      <div class="facility-grid"><article class="facility-card facility-large"><img src="media/classroom.png" alt="শ্রেণিকক্ষে শিক্ষার্থীদের শেখার পরিবেশ" loading="lazy"><div class="facility-overlay"><span>01 / LEARNING</span><h3>শ্রেণিকক্ষ ও পাঠদান</h3><p>জ্ঞানের চর্চা আর শ্রদ্ধার মেলবন্ধন</p></div></article><article class="facility-card"><img src="media/annualTour2.jpeg" alt="সফর" loading="lazy"><div class="facility-overlay"><span>02 / KNOWLEDGE</span><h3>সফর</h3><p>নতুন দিগন্তের খোঁজে, আমরা এক সাথে, এক জোয়ারে</p></div></article><article class="facility-card"><img src="media/scienceFair_2025.jpeg" alt="শিক্ষার্থীদের দলগত কার্যক্রম" loading="lazy"><div class="facility-overlay"><span>03 / COMMUNITY</span><h3>সহশিক্ষা কার্যক্রম</h3><p>বিজ্ঞানের নতুন আবিষ্কারে, আমরা যাবো অজানারে</p></div></article></div><p class="small-disclaimer"> মানুষ তার স্বপ্নের সমান বড়</p>
-    </div></section>
+      <article class="info-card" id="calendar" data-reveal>
+        <h3>একাডেমিক ক্যালেন্ডার</h3>
+        <ul class="calendar-list" id="calendarList"></ul>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="section gallery-section"><div class="container"><div class="section-heading"><div><div class="eyebrow"><span></span> স্মৃতি ও মুহূর্ত</div><h2 class="section-title"> স্মৃতিপটে<span> ক্যাম্পাস।</span></h2></div><p class="heading-aside">প্রতিষ্ঠানের প্রকৃত ছবি, অনুষ্ঠান ও শিক্ষার্থীদের কার্যক্রম দিয়ে এই গ্যালারি সমৃদ্ধ করুন।</p></div>
-      <div class="gallery-grid"><button class="gallery-item gallery-main" data-gallery="ক্যাম্পাসের পরিবেশ"><img src="media/gdfm_campus.png" alt="ক্যাম্পাস ভবন" loading="lazy"><span>ক্যাম্পাসের পরিবেশ ↗</span></button><button class="gallery-item" data-gallery="দাখিল ২০২৬"><img src="media/dakhil_26.jpeg" দাখিল ২০২৬" loading="lazy"><span>দাখিল ২০২৬ ↗</span></button><button class="gallery-item" data-gallery="গ্রন্থাগার"><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=85" alt="গ্রন্থাগারের দৃশ্য" loading="lazy"><span>গ্রন্থাগার ↗</span></button></div><p class="small-disclaimer">আমাদের বন্ধন।</p>
-    </div></section>
+<!-- ========== F. ADMINISTRATION & LEADERSHIP ========== -->
+<section class="section people-section" id="leadership" aria-labelledby="leadershipTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="leadershipTitle">পরিচালনা পর্ষদ ও প্রশাসন</h2>
+      <p>নাম, পদবি ও ছবি যাচাই করা হলে এখানে যোগ করা হবে।</p>
+    </div>
+    <ul class="people-grid" data-reveal-group>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">অ</span>
+        <h3>অধ্যক্ষ</h3>
+        <p>নাম ও ছবি যোগ হবে</p>
+      </li>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">স</span>
+        <h3>সভাপতি, পরিচালনা পর্ষদ</h3>
+        <p>নাম ও ছবি যোগ হবে</p>
+      </li>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">প্র</span>
+        <h3>প্রশাসনিক কর্মকর্তা</h3>
+        <p>নাম ও ছবি যোগ হবে</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <section class="admission-section" id="admission"><div class="admission-bg"></div><div class="container admission-grid"><div class="admission-copy"><div class="eyebrow light"><span></span> ভর্তি কার্যক্রম</div><h2 class="section-title">আপনার আগামী<br><span>শুরু হোক এখান থেকে।</span></h2><p>ভর্তি-সংক্রান্ত তথ্য ও প্রাথমিক যোগাযোগের জন্য ফর্মটি পূরণ করুন।</p><div class="admission-benefits"><span>✓ একাধিক শিক্ষাস্তর</span><span>✓ মূল্যবোধভিত্তিক শিক্ষা</span><span>✓ সরাসরি যোগাযোগের সুযোগ</span></div><div class="admission-contact"><span class="contact-round">☎</span><div><small>ভর্তি সংক্রান্ত যোগাযোগ</small><strong>+880 1309-115770</strong></div></div></div>
-      <form class="admission-form" id="admissionForm" novalidate><div class="form-top"><span>ADMISSION ENQUIRY</span><span class="form-step">01 <i>/ 01</i></span></div><h3>ভর্তির তথ্য জানতে চান?</h3><p>নিচের তথ্যগুলো পূরণ করুন</p><div class="form-grid"><label>শিক্ষার্থীর নাম <span>*</span><input name="studentName" type="text" placeholder="পূর্ণ নাম লিখুন" required minlength="2"></label><label>অভিভাবকের নাম <span>*</span><input name="guardianName" type="text" placeholder="অভিভাবকের নাম" required minlength="2"></label><label>মোবাইল নম্বর <span>*</span><input name="phone" type="tel" placeholder="01XXXXXXXXX" required pattern="(?:\\+?88)?01[3-9]\\d{8}"></label><label>শিক্ষাস্তর <span>*</span><select name="program" required><option value="">নির্বাচন করুন</option><option>প্লে গ্রুপ / প্রাথমিক</option><option>দাখিল (Dakhil)</option><option>আলিম (Alim)</option><option>ফাযিল (বি.এ.)</option></select></label><label class="full-field">অতিরিক্ত তথ্য <textarea name="message" rows="3" placeholder="কোনো প্রশ্ন থাকলে লিখুন (ঐচ্ছিক)"></textarea></label></div><label class="consent"><input type="checkbox" name="consent" required><span>আমি বুঝতে পারছি এটি একটি ডেমো ফর্ম; তথ্য অনলাইনে জমা বা সংরক্ষিত হবে না।</span></label><button class="btn btn-primary form-submit" type="submit">ফর্ম যাচাই করুন <span>→</span></button><div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div><small class="privacy-note">প্রকৃত আবেদন জমা দিতে মাদ্রাসা অফিসের সঙ্গে যোগাযোগ করুন।</small></form>
-    </div></section>
+<section class="section people-section alt" id="staff" aria-labelledby="staffTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="staffTitle">শিক্ষক ও কর্মচারী</h2>
+      <p>শিক্ষকমণ্ডলীর তালিকা যাচাই করে যোগ করা হবে।</p>
+    </div>
+    <ul class="people-grid four" data-reveal-group>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">শি</span>
+        <h3>শিক্ষকমণ্ডলী</h3>
+        <p>নাম, বিষয় ও ছবি যোগ হবে</p>
+      </li>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">অফ</span>
+        <h3>অফিস সহায়তা</h3>
+        <p>নাম ও দায়িত্ব যোগ হবে</p>
+      </li>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">গ্র</span>
+        <h3>গ্রন্থাগার</h3>
+        <p>নাম ও দায়িত্ব যোগ হবে</p>
+      </li>
+      <li class="person is-placeholder" data-reveal>
+        <span class="avatar" aria-hidden="true">কর্ম</span>
+        <h3>অন্যান্য কর্মচারী</h3>
+        <p>নাম ও দায়িত্ব যোগ হবে</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <section class="portal-section"><div class="container portal-inner"><div><div class="eyebrow"><span></span> ডিজিটাল সেবা</div><h2 class="section-title">প্রয়োজনীয় সেবা <span>হাতের নাগালে।</span></h2><p class="muted">প্রতিটি ব্যবহারকারীর জন্য আলাদা ডেমো পোর্টাল অভিজ্ঞতা।</p></div><div class="portal-cards"><button class="portal-card" data-role="Student"><span class="portal-icon">♙</span><strong>শিক্ষার্থী</strong><small>ড্যাশবোর্ড ও তথ্য</small><span class="portal-arrow">↗</span></button><button class="portal-card" data-role="Guardian"><span class="portal-icon">♧</span><strong>অভিভাবক</strong><small>শিক্ষার্থীর অগ্রগতি</small><span class="portal-arrow">↗</span></button><button class="portal-card" data-role="Teacher / Staff"><span class="portal-icon">▤</span><strong>শিক্ষক ও কর্মচারী</strong><small>শিক্ষা কার্যক্রম</small><span class="portal-arrow">↗</span></button><button class="portal-card" data-role="Librarian"><span class="portal-icon">▥</span><strong>লাইব্রেরিয়ান</strong><small>গ্রন্থাগার ব্যবস্থাপনা</small><span class="portal-arrow">↗</span></button><button class="portal-card" data-role="Sub-Admin"><span class="portal-icon">⚙</span><strong>সাব-অ্যাডমিন</strong><small>প্রশাসনিক সেবা</small><span class="portal-arrow">↗</span></button><button class="portal-card" data-role="Super Admin"><span class="portal-icon">✧</span><strong>সুপার অ্যাডমিন</strong><small>সিস্টেম ওভারভিউ</small><span class="portal-arrow">↗</span></button></div></div></section>
+<!-- ========== DOWNLOADS ========== -->
+<section class="section downloads-section" id="downloads" aria-labelledby="downloadsTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="downloadsTitle">ডাউনলোড</h2>
+      <p>ভর্তি ফর্ম, একাডেমিক নথি ও প্রয়োজনীয় ফাইল।</p>
+    </div>
+    <ul class="download-list" id="downloadList" data-reveal></ul>
+  </div>
+</section>
 
-    <section class="contact-section" id="contact"><div class="container contact-grid"><div><div class="eyebrow light"><span></span> যোগাযোগ</div><h2 class="section-title">কথা বলতে<br><span>আমরা প্রস্তুত।</span></h2><p>ভর্তি, একাডেমিক কার্যক্রম বা প্রতিষ্ঠান সম্পর্কে জানতে সরাসরি যোগাযোগ করুন।</p><a class="btn btn-gold" href="tel:+8801309115770">এখনই কল করুন <span>↗</span></a></div><div class="contact-details"><div class="contact-row"><span>⌖</span><div><small>ঠিকানা</small><strong>যশোর–বেনাপোল মহাসড়ক, ঝিকরগাছা,<br>যশোর ৭৪২০, বাংলাদেশ</strong></div></div><div class="contact-row"><span>☎</span><div><small>ফোন</small><a href="tel:+8801309115770">+880 1309-115770</a><a href="tel:+8801718092785">+880 1718-092785</a></div></div><div class="contact-row"><span>✉</span><div><small>ইমেইল</small><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></div></div><div class="contact-row"><span>▤</span><div><small>প্রতিষ্ঠান পরিচিতি</small><strong>EIIN: 115770</strong></div></div></div><div class="map-panel"><div class="map-grid"></div><span class="map-pin">⌖</span><div class="map-label"><strong>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</strong><small>Jhikargachha, Jashore 7420</small><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Gazir+Dargah+Foizabad+Fazil+BA+Madrasha+Jhikargachha+Jashore">ম্যাপে খুঁজুন ↗</a></div></div></div></section>
-  </main>
+<!-- ========== M. STUDENT & INSTITUTIONAL SERVICES ========== -->
+<section class="section services-section" id="services" aria-labelledby="servicesTitle">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2 id="servicesTitle">শিক্ষার্থী ও প্রাতিষ্ঠানিক সেবা</h2>
+      <p>যে সেবাগুলো এখনো চালু হয়নি সেগুলো স্পষ্টভাবে চিহ্নিত করা আছে।</p>
+    </div>
 
-  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-light" href="#top"><span class="brand-mark"><svg viewBox="0 0 48 48"><path d="M24 4 5 15v3h38v-3L24 4Zm-14 17h4v13h-4zm12 0h4v13h-4zm12 0h4v13h-4zM5 37h38v4H5z"/></svg></span><span class="brand-text"><strong>গাজীর দরগাহ ফয়জাবাদ</strong><small>ফাযিল (বি.এ) মাদ্রাসা</small><em>GAZIR DARGAH FOIZABAD FAZIL (B.A.) MADRASHA</em></span></a><p>জ্ঞান, নৈতিকতা ও মানবিকতার আলোয় আগামী প্রজন্মের পথচলা।</p></div><div class="footer-col"><h3>দ্রুত লিংক</h3><a href="#about">আমাদের সম্পর্কে</a><a href="#academics">একাডেমিক কার্যক্রম</a><a href="#notices">নোটিশ বোর্ড</a><a href="#admission">ভর্তি তথ্য</a></div><div class="footer-col"><h3>প্রয়োজনীয় সেবা</h3><button data-role="Student">শিক্ষার্থী পোর্টাল</button><button data-role="Guardian">অভিভাবক পোর্টাল</button><button data-role="Teacher / Staff">শিক্ষক পোর্টাল</button><a href="#contact">যোগাযোগ</a></div><div class="footer-col footer-contact"><h3>যোগাযোগ</h3><a href="tel:+8801309115770">+880 1309-115770</a><a href="tel:+8801718092785">+880 1718-092785</a><a href="mailto:gazirdargahffmadrasha@gmail.com">ইমেইল পাঠান ↗</a><small>EIIN: 115770</small></div></div><div class="container footer-bottom"><span>© <span id="year"></span> By AL MONIR</span><span>শিক্ষা • শৃঙ্খলা • সাফল্য</span></div></footer>
+    <ul class="service-grid" data-reveal-group>
+      <li class="service" data-reveal>
+        <h3>শিক্ষার্থী পোর্টাল</h3>
+        <p>ফলাফল, উপস্থিতি ও নোটিশ দেখার ব্যবস্থা।</p>
+        <button class="service-btn" type="button" data-info-title="শিক্ষার্থী পোর্টাল" data-info-text="শিক্ষার্থী পোর্টাল এখনো চালু হয়নি। চালু হলে এখানে প্রকৃত লিংক যোগ করা হবে। আপাতত নোটিশ বোর্ড দেখুন বা অফিসে যোগাযোগ করুন।"><span class="badge">শীঘ্রই আসছে</span> বিস্তারিত</button>
+      </li>
+      <li class="service" data-reveal>
+        <h3>অভিভাবক পোর্টাল</h3>
+        <p>শিক্ষার্থীর অগ্রগতি ও প্রতিষ্ঠানের ঘোষণা জানার ব্যবস্থা।</p>
+        <button class="service-btn" type="button" data-info-title="অভিভাবক পোর্টাল" data-info-text="অভিভাবক পোর্টাল এখনো চালু হয়নি। শিক্ষার্থীর তথ্যের জন্য আপাতত মাদ্রাসা অফিসে যোগাযোগ করুন।"><span class="badge">শীঘ্রই আসছে</span> বিস্তারিত</button>
+      </li>
+      <li class="service" data-reveal>
+        <h3>শিক্ষক ও কর্মচারী পোর্টাল</h3>
+        <p>প্রশাসনিক ও একাডেমিক কাজের জন্য অভ্যন্তরীণ ব্যবস্থা।</p>
+        <button class="service-btn" type="button" data-info-title="শিক্ষক ও কর্মচারী পোর্টাল" data-info-text="এই পোর্টাল এখনো চালু হয়নি। লগইন ও তথ্য সংরক্ষণের জন্য নিরাপদ সার্ভার ও ডাটাবেস প্রয়োজন, যা শুধু এই স্ট্যাটিক ওয়েবসাইটে সম্ভব নয়।"><span class="badge">শীঘ্রই আসছে</span> বিস্তারিত</button>
+      </li>
+      <li class="service" data-reveal>
+        <h3>গ্রন্থাগার সেবা</h3>
+        <p>বই ও পাঠ-সহায়তা সংক্রান্ত তথ্য।</p>
+        <button class="service-btn" type="button" data-info-title="গ্রন্থাগার সেবা" data-info-text="গ্রন্থাগারের সময়সূচি, সদস্যপদ ও বইয়ের তালিকা যাচাই করে পরে যোগ করা হবে। আপাতত অফিসে যোগাযোগ করুন।"><span class="badge">তথ্য যোগ হবে</span> বিস্তারিত</button>
+      </li>
+      <li class="service" data-reveal>
+        <h3>একাডেমিক রিসোর্স</h3>
+        <p>ডাউনলোডযোগ্য নথি ও পাঠসংক্রান্ত ফাইল।</p>
+        <a class="service-btn" href="#downloads">ডাউনলোড অংশে যান</a>
+      </li>
+      <li class="service" data-reveal>
+        <h3>গুরুত্বপূর্ণ লিংক</h3>
+        <p>শিক্ষা মন্ত্রণালয় ও মাদ্রাসা শিক্ষা বোর্ডের অফিসিয়াল সাইট।</p>
+        <a class="service-btn" href="#footerLinks">লিংকের তালিকা</a>
+      </li>
+    </ul>
+  </div>
+</section>
 
-  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="বন্ধ করুন">×</button><div id="modalContent"></div></section></div>
-  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
-  <button class="back-top" id="backTop" aria-label="উপরে ফিরে যান">↑</button>
+<!-- ========== N. CONTACT ========== -->
+<section class="contact" id="contact" aria-labelledby="contactTitle">
+  <div class="container contact-grid">
+    <div class="contact-copy" data-reveal>
+      <h2 id="contactTitle">যোগাযোগ</h2>
+      <p class="lead">ভর্তি, একাডেমিক কার্যক্রম বা প্রতিষ্ঠান সম্পর্কে জানতে সরাসরি যোগাযোগ করুন।</p>
+      <dl class="contact-list">
+        <div><dt>ঠিকানা</dt><dd>যশোর–বেনাপোল মহাসড়ক, ঝিকরগাছা, যশোর ৭৪২০, বাংলাদেশ</dd></div>
+        <div><dt>ফোন</dt><dd><a href="tel:+8801309115770">+880 1309-115770</a><br><a href="tel:+8801718092785">+880 1718-092785</a></dd></div>
+        <div><dt>ইমেইল</dt><dd><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></dd></div>
+        <div><dt>EIIN</dt><dd>১১৫৭৭০</dd></div>
+        <div><dt>অফিস সময়</dt><dd class="muted-text">যাচাই করে যোগ হবে</dd></div>
+      </dl>
+      <div class="contact-actions">
+        <a class="btn btn-gold" href="tel:+8801309115770">কল করুন</a>
+        <a class="btn btn-ghost" href="mailto:gazirdargahffmadrasha@gmail.com">ইমেইল পাঠান</a>
+      </div>
+    </div>
+
+    <div class="map-box" data-reveal>
+      <iframe title="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসার অবস্থান" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Gazir+Dargah+Foizabad+Fazil+Madrasha+Jhikargachha+Jashore&amp;output=embed"></iframe>
+      <a class="map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Gazir+Dargah+Foizabad+Fazil+Madrasha+Jhikargachha+Jashore">Google Maps-এ খুলুন <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========== O. FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-name">গাজীর দরগাহ ফয়জাবাদ <span>ফাযিল (বি.এ) মাদ্রাসা</span></p>
+      <p lang="en" class="footer-en">Gazir Dargah Foizabad Fazil (B.A.) Madrasha</p>
+      <p>জ্ঞান, নৈতিকতা ও মানবিকতার আলোয় আগামী প্রজন্মের পথচলা।</p>
+    </div>
+    <nav aria-label="ফুটার: দ্রুত লিংক">
+      <h2>দ্রুত লিংক</h2>
+      <ul>
+        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+        <li><a href="#notices">নোটিশ বোর্ড</a></li>
+        <li><a href="#events">ইভেন্ট</a></li>
+        <li><a href="#gallery">গ্যালারি</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="ফুটার: একাডেমিক লিংক">
+      <h2>একাডেমিক</h2>
+      <ul>
+        <li><a href="#academics">শিক্ষাস্তর</a></li>
+        <li><a href="#admission">ভর্তি তথ্য</a></li>
+        <li><a href="#results">ফলাফল</a></li>
+        <li><a href="#calendar">একাডেমিক ক্যালেন্ডার</a></li>
+        <li><a href="#downloads">ডাউনলোড</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>যোগাযোগ</h2>
+      <ul>
+        <li><a href="tel:+8801309115770">+880 1309-115770</a></li>
+        <li><a href="tel:+8801718092785">+880 1718-092785</a></li>
+        <li><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></li>
+        <li>EIIN: ১১৫৭৭০</li>
+      </ul>
+    </div>
+    <nav id="footerLinks" aria-label="ফুটার: শিক্ষাসংক্রান্ত বহিঃসংযোগ">
+      <h2>শিক্ষা-সংক্রান্ত লিংক</h2>
+      <ul>
+        <li><a href="https://moedu.gov.bd/" target="_blank" rel="noopener noreferrer">শিক্ষা মন্ত্রণালয় <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+        <li><a href="https://www.bmeb.gov.bd/" target="_blank" rel="noopener noreferrer">মাদ্রাসা শিক্ষা বোর্ড <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+        <li><a href="http://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer">ফলাফল পোর্টাল <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</span>
+    <span>ওয়েবসাইট তৈরি: AL MONIR</span>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" type="button" aria-label="পাতার উপরে ফিরে যান" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg>
+</button>
+
+<!-- Lightbox (images and video) -->
+<dialog class="lightbox" id="lightbox" aria-label="ছবি ও ভিডিও দেখুন">
+  <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="বন্ধ করুন">&times;</button>
+  <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="আগের ছবি">&#8249;</button>
+  <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="পরের ছবি">&#8250;</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <p class="lb-caption" id="lbCaption"></p>
+  <p class="lb-count" id="lbCount" aria-live="polite"></p>
+</dialog>
+
+<!-- Info dialog (notice details, service status) -->
+<dialog class="info-dialog" id="infoDialog" aria-labelledby="infoTitle">
+  <div class="info-box">
+    <button class="info-close" type="button" id="infoClose" aria-label="বন্ধ করুন">&times;</button>
+    <h2 id="infoTitle"></h2>
+    <div id="infoBody"></div>
+  </div>
+</dialog>
+
+<noscript><p class="noscript">এই ওয়েবসাইটের নোটিশ, গ্যালারি ও ফর্ম সুবিধা ব্যবহারের জন্য JavaScript চালু করুন। ফোন: +880 1309-115770</p></noscript>
 </body>
 </html>
