@@ -594,3 +594,7 @@ html, body { overflow-x: hidden; }
 @media (min-width: 960px) { .contact-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 
 .hero-arabic { text-align: left; }
+
+/* Fail-safe if JavaScript did not run */
+html.show-all [data-reveal], html.show-all .hero-step { opacity: 1 !important; transform: none !important; }
+html.show-all .hero-bg img { transform: none !important; }
