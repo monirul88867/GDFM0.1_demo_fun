@@ -1,60 +1,118 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="bn" data-theme="light">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a3a2f">
-<title>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা | ঝিকরগাছা, যশোর</title>
-<meta name="description" content="গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা, ঝিকরগাছা, যশোর। EIIN ১১৫৭৭০। প্লে গ্রুপ থেকে ফাযিল (বি.এ) পর্যন্ত ইসলামী মূল্যবোধ ও আধুনিক শিক্ষার সমন্বয়ে একটি শিক্ষাপ্রতিষ্ঠান।">
+<meta name="color-scheme" content="light dark">
+<title data-en="Gazir Dargah Foizabad Fazil (B.A.) Madrasha | Jhikargachha, Jashore">গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা | ঝিকরগাছা, যশোর</title>
+<meta name="description" content="গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা, ঝিকরগাছা, যশোর। EIIN ১১৫৭৭০। প্লে গ্রুপ থেকে ফাযিল (বি.এ) পর্যন্ত ইসলামী মূল্যবোধ ও আধুনিক শিক্ষার সমন্বয়ে একটি শিক্ষাপ্রতিষ্ঠান।" data-en-content="Gazir Dargah Foizabad Fazil (B.A.) Madrasha, Jhikargachha, Jashore. EIIN 115770. An institution blending Islamic values and modern education from Play Group to Fazil (B.A.).">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="bn_BD">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা">
 <meta property="og:description" content="ইসলামী মূল্যবোধ, আধুনিক শিক্ষা ও চরিত্র গঠনের প্রতিষ্ঠান — ঝিকরগাছা, যশোর।">
 <meta property="og:url" content="https://monirul88867.github.io/GDFM0.1_demo_fun/">
 <meta property="og:image" content="https://monirul88867.github.io/GDFM0.1_demo_fun/media/gdfm_campus2.png">
 
-<!-- If JavaScript is available, enable the entrance/reveal effects. Without JS everything stays visible. -->
-<script>document.documentElement.classList.add('js');</script>
+<!-- Apply saved language / theme / accessibility choices BEFORE first paint (no flash). -->
+<script>
+(function () {
+  var d = document.documentElement, p = {};
+  d.classList.add('js');
+  try { p = JSON.parse(localStorage.getItem('gdfm-prefs') || '{}'); } catch (e) {}
+  var dark = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+  d.setAttribute('data-theme', p.theme || (dark ? 'dark' : 'light'));
+  if (p.lang === 'en') d.lang = 'en';
+  if (p.fs) d.setAttribute('data-fs', p.fs);
+  if (p.contrast) d.setAttribute('data-contrast', 'high');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (p.noAnim === true || (p.noAnim === undefined && reduce)) d.classList.add('no-anim');
+})();
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main">মূল বিষয়বস্তুতে যান</a>
+
+<!-- Icon sprite (decorative, reused with <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19a2 2 0 0 1 2-2h13"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3 3-5 6-5s6 2 6 5M17 11a2.5 2.5 0 1 0 0-5M21 19c0-2-1.5-3.5-4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11zM12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-5-5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+    <symbol id="i-library" viewBox="0 0 24 24"><path d="M5 4h3v16H5zM10 4h3v16h-3zM15 6l3-1 3 14-3 1z"/></symbol>
+    <symbol id="i-contrast" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 3v18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2"/></symbol>
+    <symbol id="i-dome" viewBox="0 0 24 24"><path d="M12 3c3 2 5 4 5 7H7c0-3 2-5 5-7zM5 10h14v10H5zM10 20v-4a2 2 0 0 1 4 0v4"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main" data-en="Skip to main content">মূল বিষয়বস্তুতে যান</a>
 
 <!-- ========== A. TOP INFORMATION BAR ========== -->
 <div class="topbar">
   <div class="container topbar-inner">
     <ul class="topbar-info">
-      <li>EIIN: ১১৫৭৭০</li>
-      <li><a href="tel:+8801309115770">+880 1309-115770</a></li>
-      <li class="hide-sm"><a href="tel:+8801718092785">+880 1718-092785</a></li>
-      <li class="hide-md"><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></li>
+      <li><span data-en="EIIN: 115770">EIIN: ১১৫৭৭০</span></li>
+      <li><a href="tel:+8801309115770"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span>+880 1309-115770</span></a></li>
+      <li class="hide-md"><a href="tel:+8801718092785"><span>+880 1718-092785</span></a></li>
+      <li class="hide-lg"><a href="mailto:gazirdargahffmadrasha@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span>gazirdargahffmadrasha@gmail.com</span></a></li>
     </ul>
-    <ul class="topbar-links">
-      <li class="hide-sm"><a href="#notices">নোটিশ</a></li>
-      <li class="hide-sm"><a href="#downloads">ডাউনলোড</a></li>
-      <li class="hide-sm"><a href="#results">ফলাফল</a></li>
-      <li><a class="topbar-cta" href="#admission">ভর্তি তথ্য</a></li>
-    </ul>
+
+    <div class="topbar-tools">
+      <ul class="topbar-links">
+        <li class="hide-md"><a href="#notices" data-en="Notices">নোটিশ</a></li>
+        <li class="hide-md"><a href="#downloads" data-en="Downloads">ডাউনলোড</a></li>
+        <li class="hide-md"><a href="#results" data-en="Results">ফলাফল</a></li>
+      </ul>
+
+      <div class="tools" role="group" aria-label="ভাষা ও থিম" data-en-aria-label="Language and theme">
+        <button class="tool-btn js-lang" type="button" aria-label="Switch to English">
+          <svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg><span class="lang-label">EN</span>
+        </button>
+        <button class="tool-btn js-theme" type="button" aria-pressed="false" aria-label="রাত মোড চালু করুন">
+          <svg class="ico ico-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="ico ico-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <span class="tool-text theme-label">রাত</span>
+        </button>
+      </div>
+      <a class="topbar-cta" href="#admission" data-en="Admission">ভর্তি তথ্য</a>
+    </div>
   </div>
+
 </div>
 
 <!-- ========== B. HEADER & NAVIGATION ========== -->
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসা — হোম">
+    <a class="brand" href="#top" aria-label="হোম" data-en-aria-label="Home — Gazir Dargah Foizabad Fazil Madrasha">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 48 48"><path d="M24 4 5 15v3h38v-3L24 4Zm-14 17h4v13h-4zm12 0h4v13h-4zm12 0h4v13h-4zM5 37h38v4H5zM18 13l6-4 6 4H18Z"/></svg>
       </span>
       <span class="brand-text">
-        <strong>গাজীর দরগাহ ফয়জাবাদ</strong>
-        <span>ফাযিল (বি.এ) মাদ্রাসা</span>
+        <strong data-en="Gazir Dargah Foizabad">গাজীর দরগাহ ফয়জাবাদ</strong>
+        <span data-en="Fazil (B.A.) Madrasha">ফাযিল (বি.এ) মাদ্রাসা</span>
       </span>
     </a>
 
@@ -62,51 +120,51 @@
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="main-nav" id="mainNav" aria-label="প্রধান নেভিগেশন">
+    <nav class="main-nav" id="mainNav" aria-label="প্রধান নেভিগেশন" data-en-aria-label="Main navigation">
       <ul class="nav-list">
-        <li><a class="nav-link" href="#top">হোম</a></li>
+        <li><a class="nav-link" href="#top" data-en="Home">হোম</a></li>
 
         <li class="has-sub">
-          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-about">আমাদের সম্পর্কে</button>
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-about"><span data-en="About Us">আমাদের সম্পর্কে</span></button>
           <ul class="sub" id="sub-about">
-            <li><a href="#about">প্রতিষ্ঠান পরিচিতি</a></li>
-            <li><a href="#values">লক্ষ্য ও মূল্যবোধ</a></li>
-            <li><a href="#principal">অধ্যক্ষের বাণী</a></li>
+            <li><a href="#about" data-en="Institution Profile">প্রতিষ্ঠান পরিচিতি</a></li>
+            <li><a href="#values" data-en="Mission &amp; Values">লক্ষ্য ও মূল্যবোধ</a></li>
+            <li><a href="#principal" data-en="Principal's Message">অধ্যক্ষের বাণী</a></li>
           </ul>
         </li>
 
         <li class="has-sub">
-          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-academic">একাডেমিক</button>
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-academic"><span data-en="Academics">একাডেমিক</span></button>
           <ul class="sub" id="sub-academic">
-            <li><a href="#academics">শিক্ষাস্তর</a></li>
-            <li><a href="#results">ফলাফল</a></li>
-            <li><a href="#calendar">একাডেমিক ক্যালেন্ডার</a></li>
+            <li><a href="#academics" data-en="Programs">শিক্ষাস্তর</a></li>
+            <li><a href="#results" data-en="Results">ফলাফল</a></li>
+            <li><a href="#calendar" data-en="Academic Calendar">একাডেমিক ক্যালেন্ডার</a></li>
           </ul>
         </li>
 
         <li class="has-sub">
-          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-admin">প্রশাসন</button>
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-admin"><span data-en="Administration">প্রশাসন</span></button>
           <ul class="sub" id="sub-admin">
-            <li><a href="#leadership">পরিচালনা পর্ষদ</a></li>
-            <li><a href="#staff">শিক্ষক ও কর্মচারী</a></li>
+            <li><a href="#leadership" data-en="Governing Body">পরিচালনা পর্ষদ</a></li>
+            <li><a href="#staff" data-en="Teachers &amp; Staff">শিক্ষক ও কর্মচারী</a></li>
           </ul>
         </li>
 
-        <li><a class="nav-link" href="#admission">ভর্তি</a></li>
-        <li><a class="nav-link" href="#notices">নোটিশ</a></li>
-        <li><a class="nav-link" href="#events">ইভেন্ট</a></li>
+        <li><a class="nav-link" href="#admission" data-en="Admission">ভর্তি</a></li>
+        <li><a class="nav-link" href="#notices" data-en="Notices">নোটিশ</a></li>
+        <li><a class="nav-link" href="#events" data-en="Events">ইভেন্ট</a></li>
 
         <li class="has-sub">
-          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-campus">ক্যাম্পাস</button>
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="sub-campus"><span data-en="Campus">ক্যাম্পাস</span></button>
           <ul class="sub" id="sub-campus">
-            <li><a href="#campus">সুযোগ-সুবিধা</a></li>
-            <li><a href="#gallery">ছবি ও ভিডিও</a></li>
+            <li><a href="#campus" data-en="Facilities">সুযোগ-সুবিধা</a></li>
+            <li><a href="#gallery" data-en="Photos &amp; Videos">ছবি ও ভিডিও</a></li>
           </ul>
         </li>
 
-        <li><a class="nav-link" href="#downloads">ডাউনলোড</a></li>
-        <li><a class="nav-link" href="#services">শিক্ষার্থী সেবা</a></li>
-        <li><a class="nav-link" href="#contact">যোগাযোগ</a></li>
+        <li><a class="nav-link" href="#downloads" data-en="Downloads">ডাউনলোড</a></li>
+        <li><a class="nav-link" href="#services" data-en="Student Services">শিক্ষার্থী সেবা</a></li>
+        <li><a class="nav-link" href="#contact" data-en="Contact">যোগাযোগ</a></li>
       </ul>
     </nav>
   </div>
@@ -118,38 +176,52 @@
 <!-- ========== C. HERO ========== -->
 <section class="hero" id="top" aria-labelledby="heroTitle">
   <div class="hero-bg" data-parallax="0.18">
-    <img src="media/gdfm_campus2.png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus(1).png" alt="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসার ক্যাম্পাস" fetchpriority="high" decoding="async">
+    <img src="media/gdfm_campus2.png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus(1).png" alt="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসার ক্যাম্পাস" data-en-alt="Campus of Gazir Dargah Foizabad Fazil Madrasha" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-shade" aria-hidden="true"></div>
+  <svg class="hero-star" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4l6 14 14-6-6 14 14 6-14 6 6 14-14-6-6 14-6-14-14 6 6-14-14-6 14-6-6-14 14 6z"/></svg>
 
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="hero-kicker hero-step">ঝিকরগাছা, যশোর · EIIN ১১৫৭৭০</p>
-      <h1 id="heroTitle" class="hero-step">গাজীর দরগাহ ফয়জাবাদ <span>ফাযিল (বি.এ) মাদ্রাসা</span></h1>
+      <p class="hero-kicker hero-step"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span data-en="Jhikargachha, Jashore · EIIN 115770">ঝিকরগাছা, যশোর · EIIN ১১৫৭৭০</span></p>
+      <h1 id="heroTitle" class="hero-step"><span class="h1-main" data-en="Gazir Dargah Foizabad">গাজীর দরগাহ ফয়জাবাদ</span> <span class="h1-sub" data-en="Fazil (B.A.) Madrasha">ফাযিল (বি.এ) মাদ্রাসা</span></h1>
       <p class="hero-arabic hero-step" lang="ar" dir="rtl">مدرسة غازي درگاه فيض آباد الفاضلة (بكالوريوس)</p>
-      <p class="hero-lead hero-step">আধুনিক জ্ঞান, ইসলামী মূল্যবোধ ও মানবিক শিক্ষার সমন্বয়ে আগামী প্রজন্মকে গড়ে তোলার প্রত্যয়।</p>
+      <p class="hero-lead hero-step" data-en="Shaping the next generation through modern knowledge, Islamic values and humane education.">আধুনিক জ্ঞান, ইসলামী মূল্যবোধ ও মানবিক শিক্ষার সমন্বয়ে আগামী প্রজন্মকে গড়ে তোলার প্রত্যয়।</p>
+      <ul class="hero-tags hero-step" aria-label="আমাদের বৈশিষ্ট্য" data-en-aria-label="Our strengths">
+        <li style="--c: var(--gold)" data-en="Islamic values">ইসলামী মূল্যবোধ</li>
+        <li style="--c: var(--teal)" data-en="Modern education">আধুনিক শিক্ষা</li>
+        <li style="--c: var(--coral)" data-en="Character building">চরিত্র গঠন</li>
+      </ul>
       <div class="hero-actions hero-step">
-        <a class="btn btn-gold" href="#admission">ভর্তি তথ্য <small>Admission Information</small></a>
-        <a class="btn btn-ghost" href="#about">প্রতিষ্ঠান সম্পর্কে <small>Explore Our Institution</small></a>
+        <a class="btn btn-gold" href="#admission"><span data-en="Admission Information">ভর্তি তথ্য</span><small data-en="ভর্তি তথ্য">Admission Information</small></a>
+        <a class="btn btn-ghost" href="#about"><span data-en="Explore Our Institution">প্রতিষ্ঠান সম্পর্কে</span><small data-en="প্রতিষ্ঠান সম্পর্কে">Explore Our Institution</small></a>
       </div>
     </div>
 
     <figure class="hero-arch hero-step">
       <div class="arch-frame">
-        <img src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" decoding="async">
+        <img src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" data-en-alt="Institution building and grounds" decoding="async">
       </div>
-      <figcaption>আমাদের ক্যাম্পাস</figcaption>
+      <figcaption data-en="Our campus">আমাদের ক্যাম্পাস</figcaption>
     </figure>
   </div>
 </section>
 
-<!-- Quick facts (only verified information) -->
-<section class="quick-strip" aria-label="প্রতিষ্ঠানের সংক্ষিপ্ত তথ্য">
-  <ul class="container quick-grid">
-    <li><strong>EIIN ১১৫৭৭০</strong><span>শিক্ষা মন্ত্রণালয়ের প্রতিষ্ঠান সনাক্তকরণ নম্বর</span></li>
-    <li><strong>৫টি শিক্ষাস্তর</strong><span>প্লে গ্রুপ থেকে ফাযিল (বি.এ)</span></li>
-    <li><strong>ঝিকরগাছা, যশোর</strong><span>যশোর–বেনাপোল মহাসড়ক</span></li>
-    <li><a href="tel:+8801309115770"><strong>সরাসরি যোগাযোগ</strong><span>+880 1309-115770</span></a></li>
+<!-- Decorative values ticker (hidden from screen readers; the same words appear elsewhere) -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span data-en="Knowledge">জ্ঞান</span><i></i><span data-en="Ethics">নৈতিকতা</span><i></i><span data-en="Humanity">মানবিকতা</span><i></i><span data-en="Education">শিক্ষা</span><i></i><span data-en="Discipline">শৃঙ্খলা</span><i></i><span data-en="Success">সাফল্য</span><i></i>
+    <span data-en="Knowledge">জ্ঞান</span><i></i><span data-en="Ethics">নৈতিকতা</span><i></i><span data-en="Humanity">মানবিকতা</span><i></i><span data-en="Education">শিক্ষা</span><i></i><span data-en="Discipline">শৃঙ্খলা</span><i></i><span data-en="Success">সাফল্য</span><i></i>
+  </div>
+</div>
+
+<!-- Quick facts (verified information only) -->
+<section class="quick-strip" aria-label="প্রতিষ্ঠানের সংক্ষিপ্ত তথ্য" data-en-aria-label="Institution at a glance">
+  <ul class="container quick-grid" data-reveal-group>
+    <li style="--accent: var(--emerald)" data-reveal><span class="q-ico"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span><div><strong data-en="EIIN 115770">EIIN ১১৫৭৭০</strong><span data-en="Institution identification number">প্রতিষ্ঠান সনাক্তকরণ নম্বর</span></div></li>
+    <li style="--accent: var(--blue)" data-reveal><span class="q-ico"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg></span><div><strong data-en="5 levels of education">৫টি শিক্ষাস্তর</strong><span data-en="Play Group to Fazil (B.A.)">প্লে গ্রুপ থেকে ফাযিল (বি.এ)</span></div></li>
+    <li style="--accent: var(--coral)" data-reveal><span class="q-ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><div><strong data-en="Jhikargachha, Jashore">ঝিকরগাছা, যশোর</strong><span data-en="Jashore–Benapole Highway">যশোর–বেনাপোল মহাসড়ক</span></div></li>
+    <li style="--accent: var(--gold)" data-reveal><a href="tel:+8801309115770"><span class="q-ico"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span><div><strong data-en="Contact us directly">সরাসরি যোগাযোগ</strong><span>+880 1309-115770</span></div></a></li>
   </ul>
 </section>
 
@@ -157,21 +229,22 @@
 <section class="section notices-section" id="notices" aria-labelledby="noticesTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="noticesTitle">নোটিশ বোর্ড</h2>
-      <p>ভর্তি, পরীক্ষা, ফলাফল ও অন্যান্য ঘোষণা। কেবল প্রতিষ্ঠানের অনুমোদিত নোটিশ এখানে প্রকাশ করা হবে।</p>
+      <h2 id="noticesTitle" data-en="Notice Board">নোটিশ বোর্ড</h2>
+      <p data-en="Admission, examination, results and other announcements. Only approved institutional notices will be published here.">ভর্তি, পরীক্ষা, ফলাফল ও অন্যান্য ঘোষণা। কেবল প্রতিষ্ঠানের অনুমোদিত নোটিশ এখানে প্রকাশ করা হবে।</p>
     </div>
 
     <div class="notice-tools" data-reveal>
       <div class="field-inline">
-        <label for="noticeSearch" class="sr-only">নোটিশ খুঁজুন</label>
-        <input type="search" id="noticeSearch" placeholder="নোটিশ খুঁজুন…" autocomplete="off">
+        <label for="noticeSearch" class="sr-only" data-en="Search notices">নোটিশ খুঁজুন</label>
+        <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+        <input type="search" id="noticeSearch" placeholder="নোটিশ খুঁজুন…" data-en-placeholder="Search notices…" autocomplete="off">
       </div>
-      <div class="chip-row" id="noticeCategories" role="group" aria-label="নোটিশের বিভাগ"></div>
+      <div class="chip-row" id="noticeCategories" role="group" aria-label="নোটিশের বিভাগ" data-en-aria-label="Notice categories"></div>
     </div>
 
     <p class="result-count" id="noticeCount" role="status" aria-live="polite"></p>
     <div class="notice-list" id="noticeList"></div>
-    <div class="more-row"><button class="btn btn-outline" id="noticeMore" type="button" hidden>আরও নোটিশ দেখুন</button></div>
+    <div class="more-row"><button class="btn btn-outline" id="noticeMore" type="button" hidden data-en="Show more notices">আরও নোটিশ দেখুন</button></div>
   </div>
 </section>
 
@@ -180,35 +253,38 @@
   <div class="container about-grid">
     <div class="about-visual" data-reveal>
       <div class="arch-frame arch-lg">
-        <img src="media/gdfm_campus(1).png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus2.png" alt="ক্যাম্পাস ভবন" loading="lazy" decoding="async">
+        <img src="media/gdfm_campus(1).png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus2.png" alt="ক্যাম্পাস ভবন" data-en-alt="Campus building" loading="lazy" decoding="async">
       </div>
-      <p class="about-badge">জ্ঞান · নৈতিকতা · মানবিকতা</p>
+      <p class="about-badge" data-en="Knowledge · Ethics · Humanity">জ্ঞান · নৈতিকতা · মানবিকতা</p>
     </div>
 
     <div class="about-copy">
       <div class="sec-head left" data-reveal>
-        <h2 id="aboutTitle">শিক্ষা শুধু পাঠ্যবই নয়, মানুষ হয়ে ওঠার যাত্রা</h2>
+        <h2 id="aboutTitle" data-en="Education is not just textbooks — it is the journey of becoming a good human being">শিক্ষা শুধু পাঠ্যবই নয়, মানুষ হয়ে ওঠার যাত্রা</h2>
       </div>
-      <p class="lead" data-reveal>গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা শিক্ষা, নৈতিকতা ও মানবিক গুণাবলির বিকাশে নিবেদিত একটি শিক্ষাপ্রতিষ্ঠান।</p>
-      <p data-reveal>আমাদের লক্ষ্য শিক্ষার্থীদের জ্ঞান অর্জনে উৎসাহিত করা, দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা এবং ভবিষ্যতের জন্য আত্মবিশ্বাসী করে প্রস্তুত করা।</p>
-      <p class="todo-note" data-reveal>প্রতিষ্ঠার সাল, ইতিহাস ও অনুমোদিত মিশন–ভিশন বক্তব্য যাচাই করে এখানে যোগ করা হবে।</p>
+      <p class="lead" data-reveal data-en="Gazir Dargah Foizabad Fazil (B.A.) Madrasha is an educational institution dedicated to developing knowledge, ethics and humane qualities.">গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা শিক্ষা, নৈতিকতা ও মানবিক গুণাবলির বিকাশে নিবেদিত একটি শিক্ষাপ্রতিষ্ঠান।</p>
+      <p data-reveal data-en="Our aim is to encourage students to acquire knowledge, to raise them as responsible citizens, and to prepare them with confidence for the future.">আমাদের লক্ষ্য শিক্ষার্থীদের জ্ঞান অর্জনে উৎসাহিত করা, দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা এবং ভবিষ্যতের জন্য আত্মবিশ্বাসী করে প্রস্তুত করা।</p>
+      <p class="todo-note" data-reveal data-en="Founding year, history and the approved mission–vision statement will be added after verification.">প্রতিষ্ঠার সাল, ইতিহাস ও অনুমোদিত মিশন–ভিশন বক্তব্য যাচাই করে এখানে যোগ করা হবে।</p>
     </div>
   </div>
 
   <div class="container values" id="values" aria-labelledby="valuesTitle">
-    <h3 id="valuesTitle" class="values-title" data-reveal>লক্ষ্য ও মূল্যবোধ</h3>
+    <h3 id="valuesTitle" class="values-title" data-reveal data-en="Mission &amp; Values">লক্ষ্য ও মূল্যবোধ</h3>
     <ul class="values-grid" data-reveal-group>
-      <li data-reveal>
-        <h4>সমন্বিত শিক্ষা</h4>
-        <p>ইসলামী শিক্ষা ও সাধারণ শিক্ষার ভারসাম্যপূর্ণ চর্চা।</p>
+      <li data-reveal style="--accent: var(--emerald)">
+        <span class="v-ico"><svg class="ico" aria-hidden="true"><use href="#i-book"/></svg></span>
+        <h4 data-en="Integrated education">সমন্বিত শিক্ষা</h4>
+        <p data-en="A balanced practice of Islamic and general education.">ইসলামী শিক্ষা ও সাধারণ শিক্ষার ভারসাম্যপূর্ণ চর্চা।</p>
       </li>
-      <li data-reveal>
-        <h4>মূল্যবোধের চর্চা</h4>
-        <p>শৃঙ্খলা, সততা ও পারস্পরিক সম্মানবোধের বিকাশ।</p>
+      <li data-reveal style="--accent: var(--coral)">
+        <span class="v-ico"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span>
+        <h4 data-en="Practising values">মূল্যবোধের চর্চা</h4>
+        <p data-en="Developing discipline, honesty and mutual respect.">শৃঙ্খলা, সততা ও পারস্পরিক সম্মানবোধের বিকাশ।</p>
       </li>
-      <li data-reveal>
-        <h4>দায়িত্বশীল নাগরিক</h4>
-        <p>জ্ঞান অর্জনের পাশাপাশি সমাজের প্রতি দায়িত্ববোধ তৈরি।</p>
+      <li data-reveal style="--accent: var(--blue)">
+        <span class="v-ico"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span>
+        <h4 data-en="Responsible citizens">দায়িত্বশীল নাগরিক</h4>
+        <p data-en="Building a sense of responsibility to society alongside knowledge.">জ্ঞান অর্জনের পাশাপাশি সমাজের প্রতি দায়িত্ববোধ তৈরি।</p>
       </li>
     </ul>
   </div>
@@ -218,48 +294,48 @@
 <section class="section academics-section" id="academics" aria-labelledby="academicsTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="academicsTitle">শিক্ষাস্তর</h2>
-      <p>শিশুর প্রথম পাঠ থেকে উচ্চশিক্ষা পর্যন্ত — পাঁচটি ধাপে শেখার পথ।</p>
+      <h2 id="academicsTitle" data-en="Levels of Education">শিক্ষাস্তর</h2>
+      <p data-en="From a child's first lessons to higher education — a path of learning in five stages.">শিশুর প্রথম পাঠ থেকে উচ্চশিক্ষা পর্যন্ত — পাঁচটি ধাপে শেখার পথ।</p>
     </div>
 
     <ol class="levels" data-reveal-group>
-      <li class="level" data-reveal>
+      <li class="level" data-reveal style="--accent: var(--coral)">
         <div class="level-body">
-          <h3>প্লে গ্রুপ <span lang="en">Play Group</span></h3>
-          <p>শিশুদের আনন্দময় শেখার প্রাথমিক ভিত্তি।</p>
+          <h3><span data-en="Play Group">প্লে গ্রুপ</span> <small data-only="bn" lang="en">Play Group</small></h3>
+          <p data-en="The joyful first foundation of learning for young children.">শিশুদের আনন্দময় শেখার প্রাথমিক ভিত্তি।</p>
         </div>
-        <a class="level-link" href="#admission" data-level="প্লে গ্রুপ">ভর্তির তথ্য</a>
+        <a class="level-link" href="#admission" data-level="প্লে গ্রুপ" data-en="Admission info">ভর্তির তথ্য</a>
       </li>
-      <li class="level" data-reveal>
+      <li class="level" data-reveal style="--accent: var(--gold)">
         <div class="level-body">
-          <h3>প্রাথমিক <span lang="en">Primary</span></h3>
-          <p>ভাষা, সংখ্যা ও সামাজিক দক্ষতার ভিত্তি গঠন।</p>
+          <h3><span data-en="Primary">প্রাথমিক</span> <small data-only="bn" lang="en">Primary</small></h3>
+          <p data-en="Building the base of language, numbers and social skills.">ভাষা, সংখ্যা ও সামাজিক দক্ষতার ভিত্তি গঠন।</p>
         </div>
-        <a class="level-link" href="#admission" data-level="প্রাথমিক">ভর্তির তথ্য</a>
+        <a class="level-link" href="#admission" data-level="প্রাথমিক" data-en="Admission info">ভর্তির তথ্য</a>
       </li>
-      <li class="level" data-reveal>
+      <li class="level" data-reveal style="--accent: var(--emerald)">
         <div class="level-body">
-          <h3>দাখিল <span lang="en">Dakhil</span></h3>
-          <p>মাধ্যমিক পর্যায়ে বিষয়ভিত্তিক জ্ঞান, অধ্যবসায় ও পরীক্ষার প্রস্তুতি।</p>
+          <h3><span data-en="Dakhil">দাখিল</span> <small data-only="bn" lang="en">Dakhil</small></h3>
+          <p data-en="Subject knowledge, perseverance and exam preparation at the secondary stage.">মাধ্যমিক পর্যায়ে বিষয়ভিত্তিক জ্ঞান, অধ্যবসায় ও পরীক্ষার প্রস্তুতি।</p>
         </div>
-        <a class="level-link" href="#admission" data-level="দাখিল">ভর্তির তথ্য</a>
+        <a class="level-link" href="#admission" data-level="দাখিল" data-en="Admission info">ভর্তির তথ্য</a>
       </li>
-      <li class="level" data-reveal>
+      <li class="level" data-reveal style="--accent: var(--blue)">
         <div class="level-body">
-          <h3>আলিম <span lang="en">Alim</span></h3>
-          <p>উচ্চমাধ্যমিক পর্যায়ে গভীর অধ্যয়ন ও উচ্চশিক্ষার প্রস্তুতি।</p>
+          <h3><span data-en="Alim">আলিম</span> <small data-only="bn" lang="en">Alim</small></h3>
+          <p data-en="Deeper study and preparation for higher education at the higher secondary stage.">উচ্চমাধ্যমিক পর্যায়ে গভীর অধ্যয়ন ও উচ্চশিক্ষার প্রস্তুতি।</p>
         </div>
-        <a class="level-link" href="#admission" data-level="আলিম">ভর্তির তথ্য</a>
+        <a class="level-link" href="#admission" data-level="আলিম" data-en="Admission info">ভর্তির তথ্য</a>
       </li>
-      <li class="level" data-reveal>
+      <li class="level" data-reveal style="--accent: var(--plum)">
         <div class="level-body">
-          <h3>ফাযিল (বি.এ) <span lang="en">Fazil (B.A.)</span></h3>
-          <p>উচ্চশিক্ষা, বিশ্লেষণী চিন্তা ও ভবিষ্যৎ গড়ার একাডেমিক যাত্রা।</p>
+          <h3><span data-en="Fazil (B.A.)">ফাযিল (বি.এ)</span> <small data-only="bn" lang="en">Fazil (B.A.)</small></h3>
+          <p data-en="Higher education, analytical thinking and an academic journey to build the future.">উচ্চশিক্ষা, বিশ্লেষণী চিন্তা ও ভবিষ্যৎ গড়ার একাডেমিক যাত্রা।</p>
         </div>
-        <a class="level-link" href="#admission" data-level="ফাযিল (বি.এ)">ভর্তির তথ্য</a>
+        <a class="level-link" href="#admission" data-level="ফাযিল (বি.এ)" data-en="Admission info">ভর্তির তথ্য</a>
       </li>
     </ol>
-    <p class="fine-print">ভর্তির যোগ্যতা, আসনসংখ্যা, বিষয় ও ফি সম্পর্কে হালনাগাদ তথ্যের জন্য অফিসে যোগাযোগ করুন।</p>
+    <p class="fine-print" data-en="For up-to-date information on eligibility, seats, subjects and fees, please contact the office.">ভর্তির যোগ্যতা, আসনসংখ্যা, বিষয় ও ফি সম্পর্কে হালনাগাদ তথ্যের জন্য অফিসে যোগাযোগ করুন।</p>
   </div>
 </section>
 
@@ -270,13 +346,13 @@
   </div>
   <div class="principal-shade" aria-hidden="true"></div>
   <div class="container principal-inner" data-reveal>
-    <h2 id="principalTitle" class="sr-only">অধ্যক্ষের বাণী</h2>
+    <h2 id="principalTitle" class="sr-only" data-en="Principal's Message">অধ্যক্ষের বাণী</h2>
     <blockquote>
-      <p>শিক্ষার প্রকৃত সার্থকতা জ্ঞান অর্জনের পাশাপাশি নৈতিকতা, দায়িত্ববোধ ও মানবিকতায় সমৃদ্ধ মানুষ হয়ে ওঠার মধ্যে নিহিত।</p>
-      <p>শিক্ষার্থী, অভিভাবক ও শিক্ষকমণ্ডলীর সম্মিলিত প্রচেষ্টায় আমরা একটি সুন্দর শিক্ষার পরিবেশ গড়ে তুলতে চাই।</p>
+      <p data-en="The true meaning of education lies in becoming a person rich in ethics, responsibility and humanity, alongside acquiring knowledge.">শিক্ষার প্রকৃত সার্থকতা জ্ঞান অর্জনের পাশাপাশি নৈতিকতা, দায়িত্ববোধ ও মানবিকতায় সমৃদ্ধ মানুষ হয়ে ওঠার মধ্যে নিহিত।</p>
+      <p data-en="Through the combined effort of students, guardians and teachers, we wish to build a wonderful learning environment.">শিক্ষার্থী, অভিভাবক ও শিক্ষকমণ্ডলীর সম্মিলিত প্রচেষ্টায় আমরা একটি সুন্দর শিক্ষার পরিবেশ গড়ে তুলতে চাই।</p>
     </blockquote>
-    <p class="principal-sign"><strong>অধ্যক্ষ</strong> গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</p>
-    <p class="todo-note light">অধ্যক্ষের নাম, ছবি ও অনুমোদিত বাণী যাচাই করে এখানে বসানো হবে।</p>
+    <p class="principal-sign"><strong data-en="Principal">অধ্যক্ষ</strong> <span data-en="Gazir Dargah Foizabad Fazil (B.A.) Madrasha">গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</span></p>
+    <p class="todo-note light" data-en="The Principal's name, photograph and approved message will be placed here after verification.">অধ্যক্ষের নাম, ছবি ও অনুমোদিত বাণী যাচাই করে এখানে বসানো হবে।</p>
   </div>
 </section>
 
@@ -284,25 +360,25 @@
 <section class="section campus-section" id="campus" aria-labelledby="campusTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="campusTitle">ক্যাম্পাস ও সুযোগ-সুবিধা</h2>
-      <p>শেখার জন্য শান্ত, সুশৃঙ্খল ও অনুপ্রেরণাময় পরিবেশ।</p>
+      <h2 id="campusTitle" data-en="Campus &amp; Facilities">ক্যাম্পাস ও সুযোগ-সুবিধা</h2>
+      <p data-en="A calm, orderly and inspiring environment for learning.">শেখার জন্য শান্ত, সুশৃঙ্খল ও অনুপ্রেরণাময় পরিবেশ।</p>
     </div>
 
     <div class="facility-grid" data-reveal-group>
-      <figure class="facility facility-wide" data-reveal>
-        <img src="media/gdfm_campus(1).png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus2.png" alt="ক্যাম্পাস ভবন" loading="lazy" decoding="async">
-        <figcaption><strong>একাডেমিক ভবন ও প্রাঙ্গণ</strong><span>শিক্ষার্থীদের প্রতিদিনের পাঠ ও চলাচলের কেন্দ্র</span></figcaption>
+      <figure class="facility facility-wide" data-reveal style="--accent: var(--emerald)">
+        <img src="media/gdfm_campus(1).png" data-fallbacks="media/gdfm_campus.png|media/gdfm_campus2.png" alt="ক্যাম্পাস ভবন" data-en-alt="Campus building" loading="lazy" decoding="async">
+        <figcaption><strong data-en="Academic building &amp; grounds">একাডেমিক ভবন ও প্রাঙ্গণ</strong><span data-en="The centre of students' daily study and movement">শিক্ষার্থীদের প্রতিদিনের পাঠ ও চলাচলের কেন্দ্র</span></figcaption>
       </figure>
-      <figure class="facility" data-reveal>
-        <img src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" loading="lazy" decoding="async">
-        <figcaption><strong>মসজিদ</strong><span>নামাজ ও ইবাদতের স্থান</span></figcaption>
+      <figure class="facility" data-reveal style="--accent: var(--gold)">
+        <img src="media/gdfm_musgid2.png" alt="শিক্ষাপ্রতিষ্ঠানের ভবন ও প্রাঙ্গণ" data-en-alt="Institution building and grounds" loading="lazy" decoding="async">
+        <figcaption><strong data-en="Mosque">মসজিদ</strong><span data-en="A place for prayer and worship">নামাজ ও ইবাদতের স্থান</span></figcaption>
       </figure>
-      <figure class="facility" data-reveal>
-        <img src="media/classroom.png" alt="শ্রেণিকক্ষে শিক্ষার্থীদের শেখার পরিবেশ" loading="lazy" decoding="async">
-        <figcaption><strong>শ্রেণিকক্ষ</strong><span>জ্ঞানের চর্চা আর শ্রদ্ধার মেলবন্ধন</span></figcaption>
+      <figure class="facility" data-reveal style="--accent: var(--blue)">
+        <img src="media/classroom.png" alt="শ্রেণিকক্ষে শিক্ষার্থীদের শেখার পরিবেশ" data-en-alt="Students learning in a classroom" loading="lazy" decoding="async">
+        <figcaption><strong data-en="Classroom">শ্রেণিকক্ষ</strong><span data-en="Where learning meets respect">জ্ঞানের চর্চা আর শ্রদ্ধার মেলবন্ধন</span></figcaption>
       </figure>
     </div>
-    <p class="todo-note">গ্রন্থাগার, পরীক্ষাগার, খেলার মাঠসহ অন্যান্য সুযোগ-সুবিধা নিশ্চিত হলে প্রকৃত ছবিসহ এখানে যোগ করা হবে।</p>
+    <p class="todo-note" data-en="The library, laboratories, playground and other facilities will be added with real photographs once confirmed.">গ্রন্থাগার, পরীক্ষাগার, খেলার মাঠসহ অন্যান্য সুযোগ-সুবিধা নিশ্চিত হলে প্রকৃত ছবিসহ এখানে যোগ করা হবে।</p>
   </div>
 </section>
 
@@ -310,8 +386,8 @@
 <section class="section events-section" id="events" aria-labelledby="eventsTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="eventsTitle">ইভেন্ট ও প্রতিষ্ঠানের কার্যক্রম</h2>
-      <p>শিক্ষা সফর, বিজ্ঞান মেলা ও বিভিন্ন অনুষ্ঠানের মুহূর্ত।</p>
+      <h2 id="eventsTitle" data-en="Events &amp; Activities">ইভেন্ট ও প্রতিষ্ঠানের কার্যক্রম</h2>
+      <p data-en="Moments from educational tours, science fairs and other programmes.">শিক্ষা সফর, বিজ্ঞান মেলা ও বিভিন্ন অনুষ্ঠানের মুহূর্ত।</p>
     </div>
     <div class="event-grid" id="eventGrid" data-reveal-group></div>
   </div>
@@ -321,10 +397,10 @@
 <section class="section gallery-section" id="gallery" aria-labelledby="galleryTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="galleryTitle">ছবি ও ভিডিও গ্যালারি</h2>
-      <p>প্রতিষ্ঠানের প্রকৃত ছবি ও ভিডিও। ছবিতে ক্লিক করে বড় করে দেখুন।</p>
+      <h2 id="galleryTitle" data-en="Photo &amp; Video Gallery">ছবি ও ভিডিও গ্যালারি</h2>
+      <p data-en="Real photographs and videos of the institution. Select a picture to view it larger.">প্রতিষ্ঠানের প্রকৃত ছবি ও ভিডিও। ছবিতে ক্লিক করে বড় করে দেখুন।</p>
     </div>
-    <div class="chip-row" id="galleryFilters" role="group" aria-label="গ্যালারির বিভাগ" data-reveal></div>
+    <div class="chip-row" id="galleryFilters" role="group" aria-label="গ্যালারির বিভাগ" data-en-aria-label="Gallery categories" data-reveal></div>
     <div class="gallery-grid" id="galleryGrid"></div>
   </div>
 </section>
@@ -333,62 +409,62 @@
 <section class="admission" id="admission" aria-labelledby="admissionTitle">
   <div class="container admission-grid">
     <div class="admission-copy" data-reveal>
-      <h2 id="admissionTitle">ভর্তির তথ্য</h2>
-      <p class="lead">ভর্তি সম্পর্কে জানতে সরাসরি অফিসে যোগাযোগ করুন অথবা পাশের ফর্মে তথ্য লিখে ইমেইল পাঠান।</p>
+      <h2 id="admissionTitle" data-en="Admission Information">ভর্তির তথ্য</h2>
+      <p class="lead" data-en="To learn about admission, contact the office directly or send an email using the form beside.">ভর্তি সম্পর্কে জানতে সরাসরি অফিসে যোগাযোগ করুন অথবা পাশের ফর্মে তথ্য লিখে ইমেইল পাঠান।</p>
 
       <ol class="steps">
-        <li><strong>যোগাযোগ করুন</strong><span>ফোনে বা ইমেইলে কাঙ্ক্ষিত শিক্ষাস্তরের তথ্য জানুন।</span></li>
-        <li><strong>প্রয়োজনীয় কাগজপত্র জানুন</strong><span>কাগজপত্রের তালিকা অফিস থেকে নিশ্চিত করুন।</span></li>
-        <li><strong>অফিসে আবেদন করুন</strong><span>আবেদন সরাসরি মাদ্রাসা অফিসে জমা দিতে হবে।</span></li>
+        <li><strong data-en="Get in touch">যোগাযোগ করুন</strong><span data-en="Ask about your desired level by phone or email.">ফোনে বা ইমেইলে কাঙ্ক্ষিত শিক্ষাস্তরের তথ্য জানুন।</span></li>
+        <li><strong data-en="Learn the required documents">প্রয়োজনীয় কাগজপত্র জানুন</strong><span data-en="Confirm the list of documents with the office.">কাগজপত্রের তালিকা অফিস থেকে নিশ্চিত করুন।</span></li>
+        <li><strong data-en="Apply at the office">অফিসে আবেদন করুন</strong><span data-en="Applications must be submitted in person at the madrasha office.">আবেদন সরাসরি মাদ্রাসা অফিসে জমা দিতে হবে।</span></li>
       </ol>
 
-      <p class="todo-note light">ভর্তির সময়সূচি, যোগ্যতা, কাগজপত্র ও ভর্তি ফর্ম যাচাই করে যোগ হবে। ফর্ম পেলে <a href="#downloads">ডাউনলোড</a> অংশে পাওয়া যাবে।</p>
+      <p class="todo-note light"><span data-en="Admission schedule, eligibility, documents and the admission form will be added after verification. Once available, forms will appear in">ভর্তির সময়সূচি, যোগ্যতা, কাগজপত্র ও ভর্তি ফর্ম যাচাই করে যোগ হবে। ফর্ম পেলে</span> <a href="#downloads" data-en="Downloads">ডাউনলোড</a> <span data-en="section.">অংশে পাওয়া যাবে।</span></p>
 
-      <p class="admission-call">ভর্তি সংক্রান্ত ফোন: <a href="tel:+8801309115770">+880 1309-115770</a> · <a href="tel:+8801718092785">+880 1718-092785</a></p>
+      <p class="admission-call"><span data-en="Admission phone:">ভর্তি সংক্রান্ত ফোন:</span> <a href="tel:+8801309115770">+880 1309-115770</a> · <a href="tel:+8801718092785">+880 1718-092785</a></p>
     </div>
 
     <form class="enquiry" id="enquiryForm" novalidate data-reveal>
-      <h3>ভর্তি সংক্রান্ত জিজ্ঞাসা</h3>
-      <p class="form-intro">ফর্ম পূরণ করে “ইমেইল তৈরি করুন” চাপলে আপনার ইমেইল অ্যাপে প্রস্তুত বার্তা খুলবে। বার্তাটি আপনি পাঠালে তবেই অফিস তা পাবে। এই ওয়েবসাইট কোনো তথ্য সংরক্ষণ করে না।</p>
+      <h3 data-en="Admission enquiry">ভর্তি সংক্রান্ত জিজ্ঞাসা</h3>
+      <p class="form-intro" data-en="Fill in the form and press “Prepare email” to open a ready message in your email app. The office receives it only when you send it. This website does not store any information.">ফর্ম পূরণ করে “ইমেইল তৈরি করুন” চাপলে আপনার ইমেইল অ্যাপে প্রস্তুত বার্তা খুলবে। বার্তাটি আপনি পাঠালে তবেই অফিস তা পাবে। এই ওয়েবসাইট কোনো তথ্য সংরক্ষণ করে না।</p>
 
       <div class="field">
-        <label for="fStudent">শিক্ষার্থীর নাম <abbr title="আবশ্যক">*</abbr></label>
+        <label for="fStudent"><span data-en="Student's name">শিক্ষার্থীর নাম</span> <abbr title="আবশ্যক" data-en-title="Required">*</abbr></label>
         <input id="fStudent" name="student" type="text" autocomplete="off" required aria-describedby="eStudent">
         <p class="error" id="eStudent" role="alert"></p>
       </div>
       <div class="field">
-        <label for="fGuardian">অভিভাবকের নাম <abbr title="আবশ্যক">*</abbr></label>
+        <label for="fGuardian"><span data-en="Guardian's name">অভিভাবকের নাম</span> <abbr title="আবশ্যক" data-en-title="Required">*</abbr></label>
         <input id="fGuardian" name="guardian" type="text" autocomplete="name" required aria-describedby="eGuardian">
         <p class="error" id="eGuardian" role="alert"></p>
       </div>
       <div class="field">
-        <label for="fPhone">মোবাইল নম্বর <abbr title="আবশ্যক">*</abbr></label>
+        <label for="fPhone"><span data-en="Mobile number">মোবাইল নম্বর</span> <abbr title="আবশ্যক" data-en-title="Required">*</abbr></label>
         <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX" required aria-describedby="ePhone">
         <p class="error" id="ePhone" role="alert"></p>
       </div>
       <div class="field">
-        <label for="fLevel">শিক্ষাস্তর <abbr title="আবশ্যক">*</abbr></label>
+        <label for="fLevel"><span data-en="Level">শিক্ষাস্তর</span> <abbr title="আবশ্যক" data-en-title="Required">*</abbr></label>
         <select id="fLevel" name="level" required aria-describedby="eLevel">
-          <option value="">নির্বাচন করুন</option>
-          <option>প্লে গ্রুপ</option>
-          <option>প্রাথমিক</option>
-          <option>দাখিল</option>
-          <option>আলিম</option>
-          <option>ফাযিল (বি.এ)</option>
+          <option value="" data-en="Select">নির্বাচন করুন</option>
+          <option value="প্লে গ্রুপ" data-en="Play Group">প্লে গ্রুপ</option>
+          <option value="প্রাথমিক" data-en="Primary">প্রাথমিক</option>
+          <option value="দাখিল" data-en="Dakhil">দাখিল</option>
+          <option value="আলিম" data-en="Alim">আলিম</option>
+          <option value="ফাযিল (বি.এ)" data-en="Fazil (B.A.)">ফাযিল (বি.এ)</option>
         </select>
         <p class="error" id="eLevel" role="alert"></p>
       </div>
       <div class="field">
-        <label for="fMessage">আপনার প্রশ্ন (ঐচ্ছিক)</label>
+        <label for="fMessage" data-en="Your question (optional)">আপনার প্রশ্ন (ঐচ্ছিক)</label>
         <textarea id="fMessage" name="message" rows="3"></textarea>
       </div>
       <div class="field check">
         <input id="fConsent" name="consent" type="checkbox" required aria-describedby="eConsent">
-        <label for="fConsent">আমি বুঝেছি, এটি কোনো অনলাইন আবেদন নয়; বার্তাটি আমার ইমেইল অ্যাপ থেকে পাঠাতে হবে।</label>
+        <label for="fConsent" data-en="I understand this is not an online application; I must send the message from my own email app.">আমি বুঝেছি, এটি কোনো অনলাইন আবেদন নয়; বার্তাটি আমার ইমেইল অ্যাপ থেকে পাঠাতে হবে।</label>
         <p class="error" id="eConsent" role="alert"></p>
       </div>
 
-      <button class="btn btn-gold btn-block" type="submit">ইমেইল তৈরি করুন</button>
+      <button class="btn btn-gold btn-block" type="submit" data-en="Prepare email">ইমেইল তৈরি করুন</button>
       <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
     </form>
   </div>
@@ -398,22 +474,22 @@
 <section class="section results-section" id="results" aria-labelledby="resultsTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="resultsTitle">ফলাফল ও একাডেমিক তথ্য</h2>
+      <h2 id="resultsTitle" data-en="Results &amp; Academic Information">ফলাফল ও একাডেমিক তথ্য</h2>
     </div>
 
-    <div class="info-grid">
-      <article class="info-card" data-reveal>
-        <h3>পরীক্ষার ফলাফল</h3>
-        <p>এই ওয়েবসাইটে ফলাফল অনুসন্ধানের কোনো ব্যবস্থা নেই। সরকারি পাবলিক পরীক্ষার ফলাফল সংশ্লিষ্ট বোর্ড বা বিশ্ববিদ্যালয়ের অফিসিয়াল সূত্র থেকেই দেখতে হবে।</p>
+    <div class="info-grid" data-reveal-group>
+      <article class="info-card" data-reveal style="--accent: var(--blue)">
+        <h3 data-en="Examination results">পরীক্ষার ফলাফল</h3>
+        <p data-en="This website has no result search. Results of public examinations must be viewed from the official source of the relevant board or university.">এই ওয়েবসাইটে ফলাফল অনুসন্ধানের কোনো ব্যবস্থা নেই। সরকারি পাবলিক পরীক্ষার ফলাফল সংশ্লিষ্ট বোর্ড বা বিশ্ববিদ্যালয়ের অফিসিয়াল সূত্র থেকেই দেখতে হবে।</p>
         <ul class="link-list">
-          <li><a href="http://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer">শিক্ষা বোর্ডের ফলাফল পোর্টাল <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
-          <li><a href="https://www.bmeb.gov.bd/" target="_blank" rel="noopener noreferrer">বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+          <li><a href="http://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer"><span data-en="Education Board results portal">শিক্ষা বোর্ডের ফলাফল পোর্টাল</span> <span class="sr-only" data-en="(opens in a new tab)">(নতুন ট্যাবে খুলবে)</span></a></li>
+          <li><a href="https://www.bmeb.gov.bd/" target="_blank" rel="noopener noreferrer"><span data-en="Bangladesh Madrasah Education Board">বাংলাদেশ মাদ্রাসা শিক্ষা বোর্ড</span> <span class="sr-only" data-en="(opens in a new tab)">(নতুন ট্যাবে খুলবে)</span></a></li>
         </ul>
-        <p class="fine-print">প্রতিষ্ঠানের নিজস্ব পরীক্ষার ফলাফল ও পরীক্ষার নোটিশ প্রকাশিত হলে <a href="#notices">নোটিশ বোর্ডে</a> দেখা যাবে।</p>
+        <p class="fine-print"><span data-en="The institution's own results and examination notices will appear on the">প্রতিষ্ঠানের নিজস্ব পরীক্ষার ফলাফল ও পরীক্ষার নোটিশ প্রকাশিত হলে</span> <a href="#notices" data-en="Notice Board">নোটিশ বোর্ডে</a> <span data-en="when published.">দেখা যাবে।</span></p>
       </article>
 
-      <article class="info-card" id="calendar" data-reveal>
-        <h3>একাডেমিক ক্যালেন্ডার</h3>
+      <article class="info-card" id="calendar" data-reveal style="--accent: var(--teal)">
+        <h3 data-en="Academic calendar">একাডেমিক ক্যালেন্ডার</h3>
         <ul class="calendar-list" id="calendarList"></ul>
       </article>
     </div>
@@ -424,24 +500,24 @@
 <section class="section people-section" id="leadership" aria-labelledby="leadershipTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="leadershipTitle">পরিচালনা পর্ষদ ও প্রশাসন</h2>
-      <p>নাম, পদবি ও ছবি যাচাই করা হলে এখানে যোগ করা হবে।</p>
+      <h2 id="leadershipTitle" data-en="Governing Body &amp; Administration">পরিচালনা পর্ষদ ও প্রশাসন</h2>
+      <p data-en="Names, designations and photographs will be added after verification.">নাম, পদবি ও ছবি যাচাই করা হলে এখানে যোগ করা হবে।</p>
     </div>
     <ul class="people-grid" data-reveal-group>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">অ</span>
-        <h3>অধ্যক্ষ</h3>
-        <p>নাম ও ছবি যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--emerald)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-user"/></svg></span>
+        <h3 data-en="Principal">অধ্যক্ষ</h3>
+        <p data-en="Name and photo to be added">নাম ও ছবি যোগ হবে</p>
       </li>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">স</span>
-        <h3>সভাপতি, পরিচালনা পর্ষদ</h3>
-        <p>নাম ও ছবি যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--blue)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-users"/></svg></span>
+        <h3 data-en="Chairperson, Governing Body">সভাপতি, পরিচালনা পর্ষদ</h3>
+        <p data-en="Name and photo to be added">নাম ও ছবি যোগ হবে</p>
       </li>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">প্র</span>
-        <h3>প্রশাসনিক কর্মকর্তা</h3>
-        <p>নাম ও ছবি যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--gold)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-shield"/></svg></span>
+        <h3 data-en="Administrative officer">প্রশাসনিক কর্মকর্তা</h3>
+        <p data-en="Name and photo to be added">নাম ও ছবি যোগ হবে</p>
       </li>
     </ul>
   </div>
@@ -450,29 +526,29 @@
 <section class="section people-section alt" id="staff" aria-labelledby="staffTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="staffTitle">শিক্ষক ও কর্মচারী</h2>
-      <p>শিক্ষকমণ্ডলীর তালিকা যাচাই করে যোগ করা হবে।</p>
+      <h2 id="staffTitle" data-en="Teachers &amp; Staff">শিক্ষক ও কর্মচারী</h2>
+      <p data-en="The list of teachers will be added after verification.">শিক্ষকমণ্ডলীর তালিকা যাচাই করে যোগ করা হবে।</p>
     </div>
     <ul class="people-grid four" data-reveal-group>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">শি</span>
-        <h3>শিক্ষকমণ্ডলী</h3>
-        <p>নাম, বিষয় ও ছবি যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--plum)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-cap"/></svg></span>
+        <h3 data-en="Teaching faculty">শিক্ষকমণ্ডলী</h3>
+        <p data-en="Names, subjects and photos to be added">নাম, বিষয় ও ছবি যোগ হবে</p>
       </li>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">অফ</span>
-        <h3>অফিস সহায়তা</h3>
-        <p>নাম ও দায়িত্ব যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--teal)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-book"/></svg></span>
+        <h3 data-en="Office support">অফিস সহায়তা</h3>
+        <p data-en="Names and roles to be added">নাম ও দায়িত্ব যোগ হবে</p>
       </li>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">গ্র</span>
-        <h3>গ্রন্থাগার</h3>
-        <p>নাম ও দায়িত্ব যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--coral)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-library"/></svg></span>
+        <h3 data-en="Library">গ্রন্থাগার</h3>
+        <p data-en="Names and roles to be added">নাম ও দায়িত্ব যোগ হবে</p>
       </li>
-      <li class="person is-placeholder" data-reveal>
-        <span class="avatar" aria-hidden="true">কর্ম</span>
-        <h3>অন্যান্য কর্মচারী</h3>
-        <p>নাম ও দায়িত্ব যোগ হবে</p>
+      <li class="person is-placeholder" data-reveal style="--accent: var(--emerald)">
+        <span class="avatar" aria-hidden="true"><svg class="ico"><use href="#i-users"/></svg></span>
+        <h3 data-en="Other staff">অন্যান্য কর্মচারী</h3>
+        <p data-en="Names and roles to be added">নাম ও দায়িত্ব যোগ হবে</p>
       </li>
     </ul>
   </div>
@@ -482,8 +558,8 @@
 <section class="section downloads-section" id="downloads" aria-labelledby="downloadsTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="downloadsTitle">ডাউনলোড</h2>
-      <p>ভর্তি ফর্ম, একাডেমিক নথি ও প্রয়োজনীয় ফাইল।</p>
+      <h2 id="downloadsTitle" data-en="Downloads">ডাউনলোড</h2>
+      <p data-en="Admission forms, academic documents and other necessary files.">ভর্তি ফর্ম, একাডেমিক নথি ও প্রয়োজনীয় ফাইল।</p>
     </div>
     <ul class="download-list" id="downloadList" data-reveal></ul>
   </div>
@@ -493,40 +569,46 @@
 <section class="section services-section" id="services" aria-labelledby="servicesTitle">
   <div class="container">
     <div class="sec-head" data-reveal>
-      <h2 id="servicesTitle">শিক্ষার্থী ও প্রাতিষ্ঠানিক সেবা</h2>
-      <p>যে সেবাগুলো এখনো চালু হয়নি সেগুলো স্পষ্টভাবে চিহ্নিত করা আছে।</p>
+      <h2 id="servicesTitle" data-en="Student &amp; Institutional Services">শিক্ষার্থী ও প্রাতিষ্ঠানিক সেবা</h2>
+      <p data-en="Services that are not yet available are clearly marked.">যে সেবাগুলো এখনো চালু হয়নি সেগুলো স্পষ্টভাবে চিহ্নিত করা আছে।</p>
     </div>
 
     <ul class="service-grid" data-reveal-group>
-      <li class="service" data-reveal>
-        <h3>শিক্ষার্থী পোর্টাল</h3>
-        <p>ফলাফল, উপস্থিতি ও নোটিশ দেখার ব্যবস্থা।</p>
-        <button class="service-btn" type="button" data-info-title="শিক্ষার্থী পোর্টাল" data-info-text="শিক্ষার্থী পোর্টাল এখনো চালু হয়নি। চালু হলে এখানে প্রকৃত লিংক যোগ করা হবে। আপাতত নোটিশ বোর্ড দেখুন বা অফিসে যোগাযোগ করুন।"><span class="badge">শীঘ্রই আসছে</span> বিস্তারিত</button>
+      <li class="service" data-reveal style="--accent: var(--emerald)">
+        <span class="s-ico"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></span>
+        <h3 data-en="Student portal">শিক্ষার্থী পোর্টাল</h3>
+        <p data-en="A way to see results, attendance and notices.">ফলাফল, উপস্থিতি ও নোটিশ দেখার ব্যবস্থা।</p>
+        <button class="service-btn" type="button" data-info-bn="শিক্ষার্থী পোর্টাল|শিক্ষার্থী পোর্টাল এখনো চালু হয়নি। চালু হলে এখানে প্রকৃত লিংক যোগ করা হবে। আপাতত নোটিশ বোর্ড দেখুন বা অফিসে যোগাযোগ করুন।" data-info-en="Student portal|The student portal is not live yet. A real link will be added here once it is. For now, please check the notice board or contact the office."><span class="badge" data-en="Coming soon">শীঘ্রই আসছে</span> <span data-en="Details">বিস্তারিত</span></button>
       </li>
-      <li class="service" data-reveal>
-        <h3>অভিভাবক পোর্টাল</h3>
-        <p>শিক্ষার্থীর অগ্রগতি ও প্রতিষ্ঠানের ঘোষণা জানার ব্যবস্থা।</p>
-        <button class="service-btn" type="button" data-info-title="অভিভাবক পোর্টাল" data-info-text="অভিভাবক পোর্টাল এখনো চালু হয়নি। শিক্ষার্থীর তথ্যের জন্য আপাতত মাদ্রাসা অফিসে যোগাযোগ করুন।"><span class="badge">শীঘ্রই আসছে</span> বিস্তারিত</button>
+      <li class="service" data-reveal style="--accent: var(--blue)">
+        <span class="s-ico"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span>
+        <h3 data-en="Guardian portal">অভিভাবক পোর্টাল</h3>
+        <p data-en="A way to follow a student's progress and institutional announcements.">শিক্ষার্থীর অগ্রগতি ও প্রতিষ্ঠানের ঘোষণা জানার ব্যবস্থা।</p>
+        <button class="service-btn" type="button" data-info-bn="অভিভাবক পোর্টাল|অভিভাবক পোর্টাল এখনো চালু হয়নি। শিক্ষার্থীর তথ্যের জন্য আপাতত মাদ্রাসা অফিসে যোগাযোগ করুন।" data-info-en="Guardian portal|The guardian portal is not live yet. For information about a student, please contact the madrasha office for now."><span class="badge" data-en="Coming soon">শীঘ্রই আসছে</span> <span data-en="Details">বিস্তারিত</span></button>
       </li>
-      <li class="service" data-reveal>
-        <h3>শিক্ষক ও কর্মচারী পোর্টাল</h3>
-        <p>প্রশাসনিক ও একাডেমিক কাজের জন্য অভ্যন্তরীণ ব্যবস্থা।</p>
-        <button class="service-btn" type="button" data-info-title="শিক্ষক ও কর্মচারী পোর্টাল" data-info-text="এই পোর্টাল এখনো চালু হয়নি। লগইন ও তথ্য সংরক্ষণের জন্য নিরাপদ সার্ভার ও ডাটাবেস প্রয়োজন, যা শুধু এই স্ট্যাটিক ওয়েবসাইটে সম্ভব নয়।"><span class="badge">শীঘ্রই আসছে</span> বিস্তারিত</button>
+      <li class="service" data-reveal style="--accent: var(--plum)">
+        <span class="s-ico"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <h3 data-en="Teacher &amp; staff portal">শিক্ষক ও কর্মচারী পোর্টাল</h3>
+        <p data-en="An internal system for administrative and academic work.">প্রশাসনিক ও একাডেমিক কাজের জন্য অভ্যন্তরীণ ব্যবস্থা।</p>
+        <button class="service-btn" type="button" data-info-bn="শিক্ষক ও কর্মচারী পোর্টাল|এই পোর্টাল এখনো চালু হয়নি। লগইন ও তথ্য সংরক্ষণের জন্য নিরাপদ সার্ভার ও ডাটাবেস প্রয়োজন, যা শুধু এই স্ট্যাটিক ওয়েবসাইটে সম্ভব নয়।" data-info-en="Teacher &amp; staff portal|This portal is not live yet. Login and data storage need a secure server and database, which a static website alone cannot provide."><span class="badge" data-en="Coming soon">শীঘ্রই আসছে</span> <span data-en="Details">বিস্তারিত</span></button>
       </li>
-      <li class="service" data-reveal>
-        <h3>গ্রন্থাগার সেবা</h3>
-        <p>বই ও পাঠ-সহায়তা সংক্রান্ত তথ্য।</p>
-        <button class="service-btn" type="button" data-info-title="গ্রন্থাগার সেবা" data-info-text="গ্রন্থাগারের সময়সূচি, সদস্যপদ ও বইয়ের তালিকা যাচাই করে পরে যোগ করা হবে। আপাতত অফিসে যোগাযোগ করুন।"><span class="badge">তথ্য যোগ হবে</span> বিস্তারিত</button>
+      <li class="service" data-reveal style="--accent: var(--coral)">
+        <span class="s-ico"><svg class="ico" aria-hidden="true"><use href="#i-library"/></svg></span>
+        <h3 data-en="Library services">গ্রন্থাগার সেবা</h3>
+        <p data-en="Information on books and study support.">বই ও পাঠ-সহায়তা সংক্রান্ত তথ্য।</p>
+        <button class="service-btn" type="button" data-info-bn="গ্রন্থাগার সেবা|গ্রন্থাগারের সময়সূচি, সদস্যপদ ও বইয়ের তালিকা যাচাই করে পরে যোগ করা হবে। আপাতত অফিসে যোগাযোগ করুন।" data-info-en="Library services|Library hours, membership and the book list will be added after verification. For now, please contact the office."><span class="badge" data-en="Info to be added">তথ্য যোগ হবে</span> <span data-en="Details">বিস্তারিত</span></button>
       </li>
-      <li class="service" data-reveal>
-        <h3>একাডেমিক রিসোর্স</h3>
-        <p>ডাউনলোডযোগ্য নথি ও পাঠসংক্রান্ত ফাইল।</p>
-        <a class="service-btn" href="#downloads">ডাউনলোড অংশে যান</a>
+      <li class="service" data-reveal style="--accent: var(--teal)">
+        <span class="s-ico"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg></span>
+        <h3 data-en="Academic resources">একাডেমিক রিসোর্স</h3>
+        <p data-en="Downloadable documents and study-related files.">ডাউনলোডযোগ্য নথি ও পাঠসংক্রান্ত ফাইল।</p>
+        <a class="service-btn" href="#downloads" data-en="Go to Downloads">ডাউনলোড অংশে যান</a>
       </li>
-      <li class="service" data-reveal>
-        <h3>গুরুত্বপূর্ণ লিংক</h3>
-        <p>শিক্ষা মন্ত্রণালয় ও মাদ্রাসা শিক্ষা বোর্ডের অফিসিয়াল সাইট।</p>
-        <a class="service-btn" href="#footerLinks">লিংকের তালিকা</a>
+      <li class="service" data-reveal style="--accent: var(--gold)">
+        <span class="s-ico"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3 data-en="Important links">গুরুত্বপূর্ণ লিংক</h3>
+        <p data-en="Official sites of the Ministry of Education and the Madrasah Education Board.">শিক্ষা মন্ত্রণালয় ও মাদ্রাসা শিক্ষা বোর্ডের অফিসিয়াল সাইট।</p>
+        <a class="service-btn" href="#footerLinks" data-en="See the list of links">লিংকের তালিকা</a>
       </li>
     </ul>
   </div>
@@ -536,25 +618,25 @@
 <section class="contact" id="contact" aria-labelledby="contactTitle">
   <div class="container contact-grid">
     <div class="contact-copy" data-reveal>
-      <h2 id="contactTitle">যোগাযোগ</h2>
-      <p class="lead">ভর্তি, একাডেমিক কার্যক্রম বা প্রতিষ্ঠান সম্পর্কে জানতে সরাসরি যোগাযোগ করুন।</p>
+      <h2 id="contactTitle" data-en="Contact">যোগাযোগ</h2>
+      <p class="lead" data-en="For admission, academic activities or anything about the institution, contact us directly.">ভর্তি, একাডেমিক কার্যক্রম বা প্রতিষ্ঠান সম্পর্কে জানতে সরাসরি যোগাযোগ করুন।</p>
       <dl class="contact-list">
-        <div><dt>ঠিকানা</dt><dd>যশোর–বেনাপোল মহাসড়ক, ঝিকরগাছা, যশোর ৭৪২০, বাংলাদেশ</dd></div>
-        <div><dt>ফোন</dt><dd><a href="tel:+8801309115770">+880 1309-115770</a><br><a href="tel:+8801718092785">+880 1718-092785</a></dd></div>
-        <div><dt>ইমেইল</dt><dd><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></dd></div>
-        <div><dt>EIIN</dt><dd>১১৫৭৭০</dd></div>
-        <div><dt>অফিস সময়</dt><dd class="muted-text">যাচাই করে যোগ হবে</dd></div>
+        <div><dt><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span data-en="Address">ঠিকানা</span></dt><dd data-en="Jashore–Benapole Highway, Jhikargachha, Jashore 7420, Bangladesh">যশোর–বেনাপোল মহাসড়ক, ঝিকরগাছা, যশোর ৭৪২০, বাংলাদেশ</dd></div>
+        <div><dt><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span data-en="Phone">ফোন</span></dt><dd><a href="tel:+8801309115770">+880 1309-115770</a><br><a href="tel:+8801718092785">+880 1718-092785</a></dd></div>
+        <div><dt><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span data-en="Email">ইমেইল</span></dt><dd><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></dd></div>
+        <div><dt><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>EIIN</dt><dd data-en="115770">১১৫৭৭০</dd></div>
+        <div><dt><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span data-en="Office hours">অফিস সময়</span></dt><dd class="muted-text" data-en="To be added after verification">যাচাই করে যোগ হবে</dd></div>
       </dl>
       <div class="contact-actions">
-        <a class="btn btn-gold" href="tel:+8801309115770">কল করুন</a>
-        <a class="btn btn-ghost" href="mailto:gazirdargahffmadrasha@gmail.com">ইমেইল পাঠান</a>
+        <a class="btn btn-gold" href="tel:+8801309115770" data-en="Call now">কল করুন</a>
+        <a class="btn btn-ghost" href="mailto:gazirdargahffmadrasha@gmail.com" data-en="Send email">ইমেইল পাঠান</a>
       </div>
     </div>
 
     <div class="map-box" data-reveal>
-      <iframe title="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসার অবস্থান" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      <iframe title="গাজীর দরগাহ ফয়জাবাদ ফাযিল মাদ্রাসার অবস্থান" data-en-title="Location of Gazir Dargah Foizabad Fazil Madrasha" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps?q=Gazir+Dargah+Foizabad+Fazil+Madrasha+Jhikargachha+Jashore&amp;output=embed"></iframe>
-      <a class="map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Gazir+Dargah+Foizabad+Fazil+Madrasha+Jhikargachha+Jashore">Google Maps-এ খুলুন <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a>
+      <a class="map-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=Gazir+Dargah+Foizabad+Fazil+Madrasha+Jhikargachha+Jashore"><span data-en="Open in Google Maps">Google Maps-এ খুলুন</span> <span class="sr-only" data-en="(opens in a new tab)">(নতুন ট্যাবে খুলবে)</span></a>
     </div>
   </div>
 </section>
@@ -564,63 +646,105 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <p class="footer-name">গাজীর দরগাহ ফয়জাবাদ <span>ফাযিল (বি.এ) মাদ্রাসা</span></p>
-      <p lang="en" class="footer-en">Gazir Dargah Foizabad Fazil (B.A.) Madrasha</p>
-      <p>জ্ঞান, নৈতিকতা ও মানবিকতার আলোয় আগামী প্রজন্মের পথচলা।</p>
+      <p class="footer-name"><span data-en="Gazir Dargah Foizabad">গাজীর দরগাহ ফয়জাবাদ</span> <span class="fn-sub" data-en="Fazil (B.A.) Madrasha">ফাযিল (বি.এ) মাদ্রাসা</span></p>
+      <p lang="en" class="footer-en" data-only="bn">Gazir Dargah Foizabad Fazil (B.A.) Madrasha</p>
+      <p data-en="Walking the path of the next generation in the light of knowledge, ethics and humanity.">জ্ঞান, নৈতিকতা ও মানবিকতার আলোয় আগামী প্রজন্মের পথচলা।</p>
     </div>
-    <nav aria-label="ফুটার: দ্রুত লিংক">
-      <h2>দ্রুত লিংক</h2>
+    <nav aria-label="ফুটার: দ্রুত লিংক" data-en-aria-label="Footer: quick links">
+      <h2 data-en="Quick links">দ্রুত লিংক</h2>
       <ul>
-        <li><a href="#about">আমাদের সম্পর্কে</a></li>
-        <li><a href="#notices">নোটিশ বোর্ড</a></li>
-        <li><a href="#events">ইভেন্ট</a></li>
-        <li><a href="#gallery">গ্যালারি</a></li>
-        <li><a href="#contact">যোগাযোগ</a></li>
+        <li><a href="#about" data-en="About Us">আমাদের সম্পর্কে</a></li>
+        <li><a href="#notices" data-en="Notice Board">নোটিশ বোর্ড</a></li>
+        <li><a href="#events" data-en="Events">ইভেন্ট</a></li>
+        <li><a href="#gallery" data-en="Gallery">গ্যালারি</a></li>
+        <li><a href="#contact" data-en="Contact">যোগাযোগ</a></li>
       </ul>
     </nav>
-    <nav aria-label="ফুটার: একাডেমিক লিংক">
-      <h2>একাডেমিক</h2>
+    <nav aria-label="ফুটার: একাডেমিক লিংক" data-en-aria-label="Footer: academic links">
+      <h2 data-en="Academics">একাডেমিক</h2>
       <ul>
-        <li><a href="#academics">শিক্ষাস্তর</a></li>
-        <li><a href="#admission">ভর্তি তথ্য</a></li>
-        <li><a href="#results">ফলাফল</a></li>
-        <li><a href="#calendar">একাডেমিক ক্যালেন্ডার</a></li>
-        <li><a href="#downloads">ডাউনলোড</a></li>
+        <li><a href="#academics" data-en="Programs">শিক্ষাস্তর</a></li>
+        <li><a href="#admission" data-en="Admission">ভর্তি তথ্য</a></li>
+        <li><a href="#results" data-en="Results">ফলাফল</a></li>
+        <li><a href="#calendar" data-en="Academic Calendar">একাডেমিক ক্যালেন্ডার</a></li>
+        <li><a href="#downloads" data-en="Downloads">ডাউনলোড</a></li>
       </ul>
     </nav>
     <div>
-      <h2>যোগাযোগ</h2>
+      <h2 data-en="Contact">যোগাযোগ</h2>
       <ul>
         <li><a href="tel:+8801309115770">+880 1309-115770</a></li>
         <li><a href="tel:+8801718092785">+880 1718-092785</a></li>
         <li><a href="mailto:gazirdargahffmadrasha@gmail.com">gazirdargahffmadrasha@gmail.com</a></li>
-        <li>EIIN: ১১৫৭৭০</li>
+        <li data-en="EIIN: 115770">EIIN: ১১৫৭৭০</li>
       </ul>
     </div>
-    <nav id="footerLinks" aria-label="ফুটার: শিক্ষাসংক্রান্ত বহিঃসংযোগ">
-      <h2>শিক্ষা-সংক্রান্ত লিংক</h2>
+    <nav id="footerLinks" aria-label="ফুটার: শিক্ষাসংক্রান্ত বহিঃসংযোগ" data-en-aria-label="Footer: external education links">
+      <h2 data-en="Education links">শিক্ষা-সংক্রান্ত লিংক</h2>
       <ul>
-        <li><a href="https://moedu.gov.bd/" target="_blank" rel="noopener noreferrer">শিক্ষা মন্ত্রণালয় <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
-        <li><a href="https://www.bmeb.gov.bd/" target="_blank" rel="noopener noreferrer">মাদ্রাসা শিক্ষা বোর্ড <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
-        <li><a href="http://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer">ফলাফল পোর্টাল <span class="sr-only">(নতুন ট্যাবে খুলবে)</span></a></li>
+        <li><a href="https://moedu.gov.bd/" target="_blank" rel="noopener noreferrer"><span data-en="Ministry of Education">শিক্ষা মন্ত্রণালয়</span> <span class="sr-only" data-en="(opens in a new tab)">(নতুন ট্যাবে খুলবে)</span></a></li>
+        <li><a href="https://www.bmeb.gov.bd/" target="_blank" rel="noopener noreferrer"><span data-en="Madrasah Education Board">মাদ্রাসা শিক্ষা বোর্ড</span> <span class="sr-only" data-en="(opens in a new tab)">(নতুন ট্যাবে খুলবে)</span></a></li>
+        <li><a href="http://www.educationboardresults.gov.bd/" target="_blank" rel="noopener noreferrer"><span data-en="Results portal">ফলাফল পোর্টাল</span> <span class="sr-only" data-en="(opens in a new tab)">(নতুন ট্যাবে খুলবে)</span></a></li>
       </ul>
     </nav>
   </div>
   <div class="container footer-bottom">
-    <span>© <span id="year"></span> গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</span>
-    <span>ওয়েবসাইট তৈরি: AL MONIR</span>
+    <span>© <span id="year"></span> <span data-en="Gazir Dargah Foizabad Fazil (B.A.) Madrasha">গাজীর দরগাহ ফয়জাবাদ ফাযিল (বি.এ) মাদ্রাসা</span></span>
+    <span data-en="Website by AL MONIR">ওয়েবসাইট তৈরি: AL MONIR</span>
   </div>
 </footer>
 
-<button class="back-top" id="backTop" type="button" aria-label="পাতার উপরে ফিরে যান" hidden>
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg>
+<!-- Accessibility: floating button + settings panel (always reachable) -->
+<button class="a11y-fab" id="a11yBtn" type="button" aria-expanded="false" aria-controls="a11yPanel" aria-label="অ্যাক্সেসিবিলিটি ও সেটিংস" data-en-aria-label="Accessibility and settings">
+  <span class="aa" aria-hidden="true">Aa</span>
+</button>
+<div class="a11y-panel" id="a11yPanel" role="dialog" aria-labelledby="a11yTitle" hidden>
+  <div class="a11y-head">
+    <h2 id="a11yTitle" data-en="Accessibility &amp; settings">অ্যাক্সেসিবিলিটি ও সেটিংস</h2>
+    <button class="a11y-close" id="a11yClose" type="button" aria-label="বন্ধ করুন" data-en-aria-label="Close">&times;</button>
+  </div>
+  <div class="a11y-row">
+    <span id="langRowLabel" data-en="Language">ভাষা</span>
+    <div class="seg" role="group" aria-labelledby="langRowLabel">
+      <button type="button" data-set-lang="bn" aria-pressed="true">বাংলা</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+  <div class="a11y-row">
+    <span id="themeRowLabel" data-en="Theme">থিম</span>
+    <div class="seg" role="group" aria-labelledby="themeRowLabel">
+      <button type="button" data-set-theme="light" aria-pressed="true"><svg class="ico" aria-hidden="true"><use href="#i-sun"/></svg><span data-en="Day">দিন</span></button>
+      <button type="button" data-set-theme="dark" aria-pressed="false"><svg class="ico" aria-hidden="true"><use href="#i-moon"/></svg><span data-en="Night">রাত</span></button>
+    </div>
+  </div>
+  <div class="a11y-row">
+    <span id="fsLabel" data-en="Text size">লেখার আকার</span>
+    <div class="seg" role="group" aria-labelledby="fsLabel">
+      <button type="button" id="fsDown" aria-label="লেখা ছোট করুন" data-en-aria-label="Decrease text size">A−</button>
+      <button type="button" id="fsReset" aria-label="স্বাভাবিক আকার" data-en-aria-label="Default text size">A</button>
+      <button type="button" id="fsUp" aria-label="লেখা বড় করুন" data-en-aria-label="Increase text size">A+</button>
+    </div>
+  </div>
+  <div class="a11y-row">
+    <span id="contrastLabel" data-en="High contrast">উচ্চ কনট্রাস্ট</span>
+    <button class="switch" id="contrastBtn" type="button" role="switch" aria-checked="false" aria-labelledby="contrastLabel"><span></span></button>
+  </div>
+  <div class="a11y-row">
+    <span id="animLabel" data-en="Stop animations">অ্যানিমেশন বন্ধ</span>
+    <button class="switch" id="animBtn" type="button" role="switch" aria-checked="false" aria-labelledby="animLabel"><span></span></button>
+  </div>
+  <button class="a11y-reset" id="a11yReset" type="button" data-en="Reset all settings">সব সেটিংস রিসেট করুন</button>
+</div>
+
+<button class="back-top" id="backTop" type="button" aria-label="পাতার উপরে ফিরে যান" data-en-aria-label="Back to top" hidden>
+  <svg class="ico" aria-hidden="true"><use href="#i-up"/></svg>
 </button>
 
 <!-- Lightbox (images and video) -->
-<dialog class="lightbox" id="lightbox" aria-label="ছবি ও ভিডিও দেখুন">
-  <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="বন্ধ করুন">&times;</button>
-  <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="আগের ছবি">&#8249;</button>
-  <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="পরের ছবি">&#8250;</button>
+<dialog class="lightbox" id="lightbox" aria-label="ছবি ও ভিডিও দেখুন" data-en-aria-label="View photos and videos">
+  <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="বন্ধ করুন" data-en-aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="আগের ছবি" data-en-aria-label="Previous">&#8249;</button>
+  <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="পরের ছবি" data-en-aria-label="Next">&#8250;</button>
   <div class="lb-stage" id="lbStage"></div>
   <p class="lb-caption" id="lbCaption"></p>
   <p class="lb-count" id="lbCount" aria-live="polite"></p>
@@ -629,12 +753,12 @@
 <!-- Info dialog (notice details, service status) -->
 <dialog class="info-dialog" id="infoDialog" aria-labelledby="infoTitle">
   <div class="info-box">
-    <button class="info-close" type="button" id="infoClose" aria-label="বন্ধ করুন">&times;</button>
+    <button class="info-close" type="button" id="infoClose" aria-label="বন্ধ করুন" data-en-aria-label="Close">&times;</button>
     <h2 id="infoTitle"></h2>
     <div id="infoBody"></div>
   </div>
 </dialog>
 
-<noscript><p class="noscript">এই ওয়েবসাইটের নোটিশ, গ্যালারি ও ফর্ম সুবিধা ব্যবহারের জন্য JavaScript চালু করুন। ফোন: +880 1309-115770</p></noscript>
+<noscript><p class="noscript">এই ওয়েবসাইটের নোটিশ, গ্যালারি ও ফর্ম সুবিধা ব্যবহারের জন্য JavaScript চালু করুন। · Please enable JavaScript to use notices, gallery and forms. Phone: +880 1309-115770</p></noscript>
 </body>
 </html>
